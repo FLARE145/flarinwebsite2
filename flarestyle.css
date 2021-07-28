@@ -11,8 +11,8 @@ body {
 
 .logo {
   display: block;
-  margin-left: auto;
+  margin-left: 0em;
   margin-right: auto;
   width: auto;
-  height: 1em; 
+  height: 10vmin; 
 }
