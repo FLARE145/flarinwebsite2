@@ -17,9 +17,23 @@ body {
   height: 10vmin; 
 }
 
-.splash {
+.linkimage {
+  display: inline-block;
+  width: auto;
+  height: 10vmin; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5em
+}
+
+.tileimage {
   display: inline-block;
   width: auto;
   height: 70vmin; 
-  float: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tilearray {
+  text-align: center
 }
