@@ -3,6 +3,26 @@ body {
   background-image: url('flarinwebsite2/res/bg1.png');
 }
 
+p{
+  font-family: "Franklin Gothic Light";
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium";
+  font-size: 30px;
+  color: red;
+}
+
+em{
+  font-size: 20px;
+}
+
+figcaption{
+  font-family: "Franklin Gothic Light";
+  color: gray;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -27,9 +47,8 @@ body {
 .linkimage {
   display: inline-block;
   width: auto;
-  height: 10vmin; 
-  margin-left: auto;
-  margin-right: auto;
+  height: 15vmin; 
+  margin: 2em;
 }
 
 .tileimage {
@@ -42,4 +61,8 @@ body {
 
 .tilearray {
   text-align: center
+}
+
+.post {
+  display: block;
 }
