@@ -23,6 +23,10 @@ figcaption{
   color: gray;
 }
 
+.imlink{
+  text-decoration: none;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -60,7 +64,7 @@ figcaption{
 }
 
 .tilearray {
-  text-align: center
+  text-align: center;
 }
 
 .post {
