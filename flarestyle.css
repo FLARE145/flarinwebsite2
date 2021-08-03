@@ -23,6 +23,11 @@ figcaption{
   color: gray;
 }
 
+.secret{
+  font-size: 2px;
+  color: white;
+}
+
 .imlink{
   text-decoration: none;
 }
