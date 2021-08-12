@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #FCFCFC;
 }
 
 p{
@@ -142,8 +142,17 @@ figcaption{
 
 .post {
   display: block;
-  padding-left: 5em;
-  padding-right: 15em;
+  background-color: white;
+  width: 875px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px 16px;
+  border-radius: .5em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
 }
 
 /* Mobile changes */
@@ -207,8 +216,11 @@ figcaption{
 
 .post {
   display: block;
-  padding-left: 2em;
-  padding-right: 2em;
+  width:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 }
