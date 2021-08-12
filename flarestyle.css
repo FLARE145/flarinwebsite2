@@ -26,13 +26,6 @@ figcaption{
   text-decoration: none;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .logo {
   display: block;
   margin-left: 0em;
@@ -53,13 +46,65 @@ figcaption{
   margin: 2em;
 }
 
-.tileimage {
+/* Tiles for links page */
+
+.newgrounds {
   display: inline-block;
-  width: auto;
-  height: 65vmin; 
-  margin-left: auto;
-  margin-right: auto;
+  background: url("/res/newgroundsblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
 }
+
+.newgrounds:hover {
+  background: url("/res/newgrounds.png") no-repeat;
+  background-size: contain;
+}
+
+.youtube {
+  display: inline-block;
+  background: url("/res/youtubeblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.youtube:hover {
+  background: url("/res/youtube.png") no-repeat;
+  background-size: contain;
+}
+
+.twitter {
+  display: inline-block;
+  background: url("/res/twitterblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.twitter:hover {
+  background: url("/res/twitter.png") no-repeat;
+  background-size: contain;
+}
+
+.twitch {
+  display: inline-block;
+  background: url("/res/twitchblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.twitch:hover {
+  background: url("/res/twitch.png") no-repeat;
+  background-size: contain;
+}
+
+/* Tiles for main page */
 
 .linkstile {
   display: inline-block;
@@ -72,8 +117,8 @@ figcaption{
 }
 
 .linkstile:hover {
-        background: url("/res/linksred.png") no-repeat;
-		background-size: contain;
+  background: url("/res/linksred.png") no-repeat;
+  background-size: contain;
 }
 
 .blogtile {
@@ -87,8 +132,8 @@ figcaption{
 }
 
 .blogtile:hover {
-        background: url("/res/blogred.png") no-repeat;
-		background-size: contain;
+  background: url("/res/blogred.png") no-repeat;
+  background-size: contain;
 }
 
 .tilearray {
@@ -100,6 +145,8 @@ figcaption{
   padding-left: 5em;
   padding-right: 15em;
 }
+
+/* Mobile changes */
 
 @media only screen and (max-width: 1000px) {
 .linkstile {
@@ -120,6 +167,42 @@ figcaption{
   height: 65vmin; 
   margin-left: auto;
   margin-right: auto;
+}
+
+.newgrounds {
+  display: inline-block;
+  background: url("/res/newgrounds.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.youtube {
+  display: inline-block;
+  background: url("/res/youtube.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.twitter {
+  display: inline-block;
+  background: url("/res/twitter.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.twitch {
+  display: inline-block;
+  background: url("/res/twitch.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
 }
 
 .post {
