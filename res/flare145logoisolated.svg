@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="192.50882mm"
+   height="48.610424mm"
+   viewBox="0 0 192.50882 48.610424"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="flare145logoisolated.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1161">
+      <stop
+         style="stop-color:#1f5cff;stop-opacity:1;"
+         offset="0"
+         id="stop1157" />
+      <stop
+         style="stop-color:#00faa0;stop-opacity:1"
+         offset="1"
+         id="stop1159" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3537"
+       inkscape:collect="always">
+      <stop
+         id="stop3533"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         id="stop3535"
+         offset="1"
+         style="stop-color:#6b6b6b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4550"
+       inkscape:collect="always">
+      <stop
+         id="stop4546"
+         offset="0"
+         style="stop-color:#00b780;stop-opacity:1" />
+      <stop
+         id="stop4548"
+         offset="1"
+         style="stop-color:#9800a2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1104">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop1098" />
+      <stop
+         style="stop-color:#ff9b00;stop-opacity:1"
+         offset="1"
+         id="stop1102" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6711"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6709"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6653"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6651"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6601"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6599"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6555"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6553"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6515"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6513"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6481"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6479"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6453"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6451"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path6155" />
+    </marker>
+    <filter
+       id="filter924"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Pixel Smear"
+       inkscape:menu="Distort"
+       inkscape:menu-tooltip="Van Gogh painting effect for bitmaps"
+       x="-0.15000001"
+       y="-0.15000001"
+       width="1.3"
+       height="1.3">
+      <feTurbulence
+         id="feTurbulence906"
+         seed="5"
+         baseFrequency="0.25 0.4"
+         numOctaves="3"
+         type="fractalNoise" />
+      <feColorMatrix
+         id="feColorMatrix908"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result5" />
+      <feComposite
+         id="feComposite910"
+         in2="result5"
+         operator="in"
+         in="SourceGraphic" />
+      <feMorphology
+         id="feMorphology912"
+         result="result3"
+         radius="1.5"
+         operator="dilate" />
+      <feTurbulence
+         id="feTurbulence914"
+         seed="7"
+         type="fractalNoise"
+         baseFrequency="0.03"
+         numOctaves="5" />
+      <feGaussianBlur
+         id="feGaussianBlur916"
+         result="result91"
+         stdDeviation="0.5" />
+      <feDisplacementMap
+         id="feDisplacementMap918"
+         in2="result91"
+         result="result4"
+         scale="27"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         in="result3" />
+      <feComposite
+         id="feComposite920"
+         in2="result4"
+         operator="arithmetic"
+         result="result2"
+         k1="1.3"
+         k3="0.8"
+         in="result4"
+         k2="0"
+         k4="0" />
+      <feBlend
+         id="feBlend922"
+         in="result2"
+         mode="screen"
+         in2="result2" />
+    </filter>
+    <filter
+       id="filter1004"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Felt"
+       inkscape:menu="Textures"
+       inkscape:menu-tooltip="Felt like texture with color turbulence and slightly darker at the edges"
+       height="1.3"
+       y="-0.15000001"
+       width="1.3"
+       x="-0.15000001">
+      <feGaussianBlur
+         id="feGaussianBlur990"
+         stdDeviation="2"
+         in="SourceGraphic"
+         result="result1" />
+      <feTurbulence
+         id="feTurbulence992"
+         type="fractalNoise"
+         baseFrequency="0.05"
+         numOctaves="5"
+         result="result0" />
+      <feDisplacementMap
+         id="feDisplacementMap994"
+         in2="result0"
+         in="result1"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="20"
+         result="result2" />
+      <feGaussianBlur
+         id="feGaussianBlur996"
+         stdDeviation="5"
+         in="result2"
+         result="result4" />
+      <feComposite
+         id="feComposite998"
+         operator="arithmetic"
+         in2="result4"
+         in="result0"
+         k2="0.5"
+         k3="1"
+         k1="1"
+         result="result6"
+         k4="0" />
+      <feComposite
+         id="feComposite1000"
+         result="result91"
+         operator="in"
+         in2="result0"
+         in="result6" />
+      <feComposite
+         id="feComposite1002"
+         in2="result91"
+         in="result2"
+         k1="1.5"
+         operator="arithmetic"
+         k2="0"
+         k3="0"
+         k4="0" />
+    </filter>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="182.96516"
+       x2="289.39041"
+       y1="154.66049"
+       x1="289.31741"
+       id="linearGradient4544"
+       xlink:href="#linearGradient4550"
+       inkscape:collect="always" />
+    <filter
+       id="filter2987"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur2977"
+         result="blur"
+         stdDeviation="0.318229"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting2981"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight2979"
+           azimuth="188"
+           elevation="33" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite2983"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite2985"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+    <filter
+       id="filter3529"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3519"
+         result="blur"
+         stdDeviation="0.171875"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting3523"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight3521"
+           azimuth="191"
+           elevation="22" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite3525"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite3527"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+    <filter
+       id="filter1389"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1379"
+         result="blur"
+         stdDeviation="0.3125"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting1383"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight1381"
+           azimuth="216"
+           elevation="15" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite1385"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite1387"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+    <filter
+       id="filter1401"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1391"
+         result="blur"
+         stdDeviation="0.3125"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting1395"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight1393"
+           azimuth="216"
+           elevation="15" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite1397"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite1399"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+    <linearGradient
+       gradientTransform="rotate(-178.8879,575.09219,35.302529)"
+       gradientUnits="userSpaceOnUse"
+       y2="47.334888"
+       x2="713.0188"
+       y1="47.334888"
+       x1="602.6875"
+       id="linearGradient1085"
+       xlink:href="#linearGradient1104"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="124.91146"
+       x2="626.23547"
+       y1="124.91146"
+       x1="617.7688"
+       gradientTransform="matrix(2.5496813,0,0,1.0655872,-833.99342,0.56387342)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient1249"
+       xlink:href="#linearGradient1104"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="-168.97713"
+       x2="40.774109"
+       y1="-168.97713"
+       x1="-16.25659"
+       id="linearGradient1149"
+       xlink:href="#linearGradient1161"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="-162.2142"
+       x2="66.478256"
+       y1="-67.228783"
+       x1="29.190823"
+       id="linearGradient1190"
+       xlink:href="#linearGradient1161"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(2.1851852,0,0,1,-365.35011,-12.700005)"
+       y2="-190.73643"
+       x2="371.44168"
+       y1="-190.73643"
+       x1="364.29794"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient1172"
+       xlink:href="#linearGradient1104"
+       inkscape:collect="always" />
+    <filter
+       id="filter1597"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1587"
+         result="blur"
+         stdDeviation="1.5"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting1591"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight1589"
+           azimuth="241"
+           elevation="19" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite1593"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite1595"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="226.51578"
+       x2="-95.111633"
+       y1="197.94078"
+       x1="-96.19693"
+       id="linearGradient2058"
+       xlink:href="#linearGradient3537"
+       inkscape:collect="always" />
+    <filter
+       id="filter2582"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur2572"
+         result="blur"
+         stdDeviation="0.494792"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting2576"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight2574"
+           azimuth="241"
+           elevation="15" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite2578"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite2580"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+    <filter
+       id="filter2594"
+       inkscape:label="Diffuse Light"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur2584"
+         result="blur"
+         stdDeviation="0.494792"
+         in="SourceGraphic" />
+      <feDiffuseLighting
+         id="feDiffuseLighting2588"
+         result="diffuse"
+         lighting-color="#ffffff"
+         surfaceScale="10"
+         diffuseConstant="1">
+        <feDistantLight
+           id="feDistantLight2586"
+           azimuth="241"
+           elevation="15" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite2590"
+         result="composite1"
+         k1="1"
+         operator="arithmetic"
+         in2="diffuse"
+         in="diffuse"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite2592"
+         result="composite2"
+         k3="1"
+         operator="arithmetic"
+         k1="1"
+         in2="SourceGraphic"
+         in="composite1"
+         k2="0"
+         k4="0" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="347.65381"
+     inkscape:cy="110.29738"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g2240"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1272"
+     inkscape:window-y="124"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-4.967488,-42.235)">
+    <g
+       transform="translate(-166.29803,-20.062024)"
+       id="layer1-5"
+       inkscape:label="Layer 1">
+      <g
+         id="g2240"
+         transform="translate(159.2123,14.20038)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.25019836px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.88125491">
+        <g
+           id="g1032">
+          <path
+             d="M 42.68072,80.990695 H 27.406532 L 22.848739,94.511548 H 12.053218 L 24.228143,58.394186 H 50.343779 L 47.444988,66.99356 H 32.124874 l -1.9801,5.874034 h 15.274188 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="path14"
+             inkscape:connector-curvature="0"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             sodipodi:nodetypes="ccccccccccc"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             d="m 69.83479,85.647586 -2.987986,8.863962 H 41.524955 L 53.699881,58.394186 h 11.086578 l -9.186941,27.2534 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="path16"
+             inkscape:connector-curvature="0"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             d="m 75.592131,82.532625 1.588142,-4.678304 h -7.71556 l -1.629163,4.678304 h -7.28702 l 8.050061,-23.73935 h 22.287432 l -8.002761,23.73935 z m -4.225773,-9.860961 h 7.641684 l 2.200607,-6.842121 -7.480665,-0.0449 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="path18"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cccccccccccccc"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             d="M 114.6927,94.716988 H 102.38899 L 101.77943,80.905073 H 98.286744 L 93.63085,94.716988 H 82.544264 l 12.174927,-36.117368 28.563999,-0.04177 -6.94708,20.419979 -2.87194,-0.0043 z M 100.8912,73.178867 h 7.50963 l 2.18483,-6.90596 h -7.36647 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="path20"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cccccccccccccccc"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             d="m 138.23322,76.889842 -1.92364,5.706571 h -17.97744 l 8.05452,-23.894075 h 17.97745 l -1.85875,5.514015 H 131.7224 l -1.16835,3.465955 h 10.19266 l -1.78793,5.30396 h -10.19265 l -1.31587,3.903574 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="path22"
+             inkscape:connector-curvature="0"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             sodipodi:nodetypes="ccccccccccccc"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path6111"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';fill:#000000;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             d="m 146.12409,86.62945 h 8.20526 l -3.07827,7.746608 h -25.81414 l 3.07825,-7.746608 h 8.58752 L 148.4401,56.389644 h -7.74911 l 3.59024,-8.293 h 16.21872 z"
+             sodipodi:nodetypes="ccccccccccc"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path6113"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';fill:#000000;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             d="m 174.2775,84.378514 h -4.24866 l -2.63795,6.638528 h -8.32027 l 2.63794,-6.638528 H 149.3609 l 2.61157,-6.572146 18.3118,-17.459331 h 9.29394 l -6.9378,17.459331 h 4.24866 z m -9.95737,-6.572146 3.58763,-9.0284 -9.31892,9.0284 z"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path6115"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';fill:#000000;stroke:none;stroke-width:0.991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             d="m 201.54913,65.018693 h -13.40254 l -1.61637,4.270784 13.2934,0.06441 -11.08426,27.353181 -21.16189,-0.006 3.87668,-9.755964 7.75982,-0.08224 -1.20842,3.048779 5.23275,-0.06872 5.9465,-14.57851 -12.86561,0.07994 7.15249,-17.783322 h 21.09036 z"
+             sodipodi:nodetypes="ccccccccccccccc"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"
+             inkscape:export-filename="C:\Users\Fabian\Documents\BlenderStuuf\flare145logoredblack.png" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.23316535"
+         x="56.217491"
+         y="43.897465"
+         id="text6125"><tspan
+           sodipodi:role="line"
+           id="tspan6123"
+           x="56.217491"
+           y="53.545395"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';stroke-width:0.23316535" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.23316535"
+         x="64.761559"
+         y="46.12635"
+         id="text6129"><tspan
+           sodipodi:role="line"
+           id="tspan6127"
+           x="64.761559"
+           y="55.774281"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';stroke-width:0.23316535" /></text>
+      <g
+         transform="translate(-279.31568,-36.221644)"
+         id="g1195"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.25019836px;line-height:1.25;font-family:'Franklin Gothic Heavy';-inkscape-font-specification:'Franklin Gothic Heavy, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.88125491" />
+    </g>
+  </g>
+</svg>
