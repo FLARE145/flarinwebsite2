@@ -19,7 +19,8 @@ em{
 
 figcaption{
   font-family: "Franklin Gothic Light";
-  color: gray;
+  font-style: italic;
+  color: #333333;
 }
 
 .imlink{
@@ -31,7 +32,7 @@ figcaption{
   margin-left: 0em;
   margin-right: auto;
   margin-bottom:2em;
-  width: auto;
+  width: 39vmin;
   height: 10vmin; 
 }
 
