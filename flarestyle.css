@@ -23,6 +23,11 @@ figcaption{
   color: #333333;
 }
 
+#flarebg {
+   position: fixed;
+   z-index: -100;
+}
+
 .imlink{
   text-decoration: none;
 }
