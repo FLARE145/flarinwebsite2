@@ -31,15 +31,15 @@
 				<!--Script--->
 		<script type = "text/javascript">
          <!--
+		    function writeCookie(name, property) {
+              document.cookie = name + "=" + property + "; ";
+			}
 		    writeCookie(initial, true);
 		 
 		    let allCookies = document.cookie.split('; ')
 		    let settings = {
 			  betaMode: allCookies.find(row => row.startsWith('betaMode')).split('=')[1]
 			}
-            function writeCookie(name, property) {
-              document.cookie = name + "=" + property + "; ";
-            }
 			function showCookie() {
 			  document.getElementById("cookieReader").innerHTML=(document.cookie);
 			}
