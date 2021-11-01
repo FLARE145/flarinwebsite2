@@ -31,6 +31,8 @@
 				<!--Script--->
 		<script type = "text/javascript">
          <!--
+		    writeCookie(initial, true);
+		 
 		    let allCookies = document.cookie.split('; ')
 		    let settings = {
 			  betaMode: allCookies.find(row => row.startsWith('betaMode')).split('=')[1]
