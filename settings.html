@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <meta charset="UTF-8">
+	  <html lang="en">
+	  <title>FLARE145</title>
+	  <meta name="description" content="secret settings page for flare 145">
+	  <meta name="keywords" content="flare 145, flare145">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/flarestyle.css">
+	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+      <main>
+		<div class="topbar">
+		  <a href="https://flare145.com/">
+		    <img src="/res/flare145logoisolated.svg" alt="flare145 logo" class="logo">
+		  </a>
+		</div>
+		<h1>Settings</h1>
+		<input type="checkbox" id="betaCheck" name="betaCheckbox" onclick="setBeta()">
+		<label for="betaCheckbox">Enable experimental mode</label>
+		<br>
+		<input type="button" name="apply" onclick="writeCookie('betaMode',settings.betaMode)">
+		<label for="apply">Apply changes</label>
+		<br>
+		<input type="button" name="check" onclick="showCookie()">
+		<label for="check">View cookie</label>
+		<br>
+		<p id="cookieReader"></p>
+				<!--Script--->
+		<script type = "text/javascript">
+         <!--
+		    let allCookies = document.cookie.split('; ')
+		    let settings = {
+			  betaMode: allCookies.find(row => row.startsWith('betaMode')).split('=')[1]
+			}
+            function writeCookie(name, property) {
+              document.cookie = name + "=" + property + "; ";
+            }
+			function showCookie() {
+			  document.getElementById("cookieReader").innerHTML=(document.cookie);
+			}
+			function setBeta() {
+			  let checkBox = document.getElementById("betaCheck")
+			  if (checkBox.checked === true) {
+			    settings.betaMode = true;
+			  } else{
+			    settings.betaMode = false;
+				}
+			}
+			
+			if (settings.betaMode === 'true'){
+			  document.getElementById("betaCheck").checked = true;
+			}
+         //-->
+      </script>
+      </main>
+    </body>
+  </html>
+

@@ -2,6 +2,20 @@ body {
   background-color: #FCFCFC;
 }
 
+#globalBackground{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
+
+#flarebg{
+  min-width: 100%;
+  max-width: 100%;
+}
+
 p{
   font-family: "Franklin Gothic Light";
   font-size: 20px;
@@ -21,11 +35,6 @@ figcaption{
   font-family: "Franklin Gothic Light";
   font-style: italic;
   color: #333333;
-}
-
-#flarebg {
-   position: fixed;
-   z-index: -100;
 }
 
 .imlink{
