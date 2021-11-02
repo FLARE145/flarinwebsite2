@@ -33,6 +33,10 @@
          <!--
 		    writeCookie('initial','exists' );
 		 
+		    if (document.cookie === "initial=exists") {
+			  writeCookie('betaMode',settings.betaMode);
+			}
+		 
 		    let allCookies = document.cookie.split('; ')
 		    let settings = {
 			  betaMode: allCookies.find(row => row.startsWith('betaMode')).split('=')[1]
