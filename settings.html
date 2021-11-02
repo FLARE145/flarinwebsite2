@@ -34,7 +34,7 @@
 		    writeCookie('initial','exists' );
 		 
 		    if (document.cookie === "initial=exists") {
-			  writeCookie('betaMode',settings.betaMode);
+			  writeCookie('betaMode','false');
 			}
 		 
 		    let allCookies = document.cookie.split('; ')
