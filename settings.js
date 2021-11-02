@@ -1,3 +1,21 @@
+function goToSettings(){
+    window.location.href = "https://flare145.com/settings";
+}
+function writeCookie(name, property) {
+    document.cookie = name + "=" + property + "; ";
+}
+
+document.addEventListener("keypress", function(event) {
+  if (event.key == 's') {
+    goToSettings();
+  }
+});
+
+writeCookie('initial','exists' );
+if (document.cookie === "initial=exists") {
+  writeCookie('betaMode','false');
+}
+
 let allCookies = document.cookie.split('; ');
 
 let settings = {
