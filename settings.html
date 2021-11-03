@@ -21,42 +21,26 @@
 		<input type="checkbox" id="betaCheck" name="betaCheckbox" onclick="setBeta()">
 		<label for="betaCheckbox">Enable experimental mode</label>
 		<br>
-		<input type="button" name="apply" onclick="writeCookie('betaMode',settings.betaMode)">
-		<label for="apply">Apply changes</label>
-		<br>
 		<input type="button" name="check" onclick="showCookie()">
 		<label for="check">View cookie</label>
 		<br>
 		<p id="cookieReader"></p>
-				<!--Script--->
+				<!--Script stuff--->
+		<script src="settings.js"></script>
 		<script type = "text/javascript">
          <!--
-		    writeCookie('initial','exists' );
-		 
-		    if (document.cookie === "initial=exists") {
-			  writeCookie('betaMode','false');
-			}
-		 
-		    let allCookies = document.cookie.split('; ')
-		    let settings = {
-			  betaMode: allCookies.find(row => row.startsWith('betaMode')).split('=')[1]
-			}
-            function writeCookie(name, property) {
-              document.cookie = name + "=" + property + "; ";
-            }
 			function showCookie() {
 			  document.getElementById("cookieReader").innerHTML=(document.cookie);
 			}
 			function setBeta() {
 			  let checkBox = document.getElementById("betaCheck")
 			  if (checkBox.checked === true) {
-			    settings.betaMode = true;
+			    writeCookie('betaMode','true');
 			  } else{
-			    settings.betaMode = false;
+			    deleteCookie('betaMode');
 				}
 			}
-			
-			if (settings.betaMode === 'true'){
+			if (readCookie('betaMode') === 'true'){
 			  document.getElementById("betaCheck").checked = true;
 			}
          //-->

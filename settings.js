@@ -1,28 +1,36 @@
-function goToSettings(){
-    window.location.href = "https://flare145.com/settings";
-}
 function writeCookie(name, property) {
-    document.cookie = name + "=" + property + "; ";
+    document.cookie = name + '=' + property + '; ';
+}
+function readCookie(name) {
+	if (document.cookie !== '') {
+	    let allCookies = document.cookie.split('; ');
+	    let cookieValue = allCookies.find(row => row.startsWith(name)).split('=')[1];
+	    return cookieValue;
+	}
+}
+function deleteCookie(name) {
+	document.cookie = name + '=' + ';expires=Thu, 01 Jan 1970 00:00:00 GMT '; 
+}
+function clearCookies() {
+	let allCookies = document.cookie.split('; ');
+	for (var i = 0; i < allCookies.length; i++) {
+		deleteCookie(allCookies[i]);
+	}
 }
 
 document.addEventListener("keypress", function(event) {
   if (event.key == 's') {
-    goToSettings();
+    window.location.href = "https://flare145.com/settings";
   }
 });
 
-writeCookie('initial','exists' );
-if (document.cookie === "initial=exists") {
-  writeCookie('betaMode','false');
-}
-
-let allCookies = document.cookie.split('; ');
-
-let settings = {
-	betaMode: allCookies.find(row => row.startsWith('betaMode')).split('=')[1]
-}
-
-if (settings.betaMode === 'true'){
-	document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+if (readCookie('betaMode') === 'true') {
+	let bgElement = document.getElementById("globalBackground")
+	if (bgElement) {
+        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+	}
+	console.log('experimental mode is enabled')
+} else {
+	console.log('press s for secret settings');
 }
 
