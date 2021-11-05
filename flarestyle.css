@@ -166,6 +166,7 @@ figcaption{
   align-content: space-around;
   gap: 20px;
   height: auto;
+  margin-bottom: 25px;
 }
 
 .imageHolder {
