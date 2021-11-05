@@ -1,16 +1,11 @@
 function countImages() {
-	let iCount = 0;
-	for (let i = 0; document.getElementById(i); i++) {
-		iCount += 1;
-	}
-	return iCount;
+	return document.getElementsByClassName("imageHolder").length;
 }
 
-function randomSequence() {
+function randomSequence(amount) {
 	let sequence = [];
-	let iCount = countImages();
-	for (let i = 0; i < iCount; i++) {
-		sequence.push(Math.floor(Math.random()*iCount));
+	for (let i = 0; i < amount; i++) {
+		sequence.push(Math.floor(Math.random()*amount));
 	}
 	return sequence;
 }
@@ -18,8 +13,8 @@ function randomSequence() {
 function randomImageOrder() {
 	let iCount = countImages();
 	for (let i = 0; i < iCount; i++) {
-		let image = document.getElementById(i);
-		image.style.order = randomSequence()[i];
+		let image = document.getElementsByClassName("imageHolder")[i];
+		image.style.order = randomSequence(iCount)[i];
 	}
 }
 
