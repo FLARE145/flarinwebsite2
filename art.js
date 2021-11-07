@@ -28,7 +28,7 @@ function openPopup(image) {
 	newpage.appendChild(cover);
 	let preview = document.createElement("div");
 	preview.classList.add("popup");
-	preview.innerHTML = '<a href="/art.html?i=' + uri + '"><img src="' + imageAdress + '"></a>';
+	preview.innerHTML = '<a href="/art?i=' + uri + '"><img src="' + imageAdress + '"></a>';
 	newpage.appendChild(preview);
 }
 

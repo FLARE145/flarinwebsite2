@@ -353,7 +353,7 @@ figcaption{
   background-color: white;
   box-shadow: 1px 4px 12px #5858586b;
   height: auto;
-  width: auto;
+  width: 80%;
   border-radius: .8em;
   display: flex;
   justify-content: center;
@@ -370,7 +370,7 @@ figcaption{
 .popup {
   display: block;
   position: fixed;
-  margin: 1% auto 4%;
+  margin: 1% 4%;
   left: 0;
   right: 0;
   max-width: -webkit-fill-available;
