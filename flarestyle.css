@@ -185,6 +185,36 @@ figcaption{
   height: 350px;
 }
 
+.popup {
+  display: block;
+  position: fixed;
+  margin: 1% auto 4%;
+  left: 0;
+  right: 0;
+  max-width: min-content;
+  height: -webkit-fill-available;
+  background-color: white;
+  box-shadow: 1px 4px 12px #0000008c;
+  border-radius: 0em;
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.popup img {
+  height: 100%;
+  width: auto;
+}
+
+.popup-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
 /* blog stuff */
 
 .post {
@@ -317,6 +347,44 @@ figcaption{
   height: 35px;
   right:15px;
   bottom: 15px;
+}
+
+.imageHolder {
+  background-color: white;
+  box-shadow: 1px 4px 12px #5858586b;
+  height: auto;
+  width: auto;
+  border-radius: .8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageInHolder {
+  flex-shrink: 0;
+  height: auto;
+  width: 100%;
+}
+
+.popup {
+  display: block;
+  position: fixed;
+  margin: 1% auto 4%;
+  left: 0;
+  right: 0;
+  max-width: -webkit-fill-available;
+  height: min-content;
+  background-color: #00000000;
+  box-shadow: 0px 0px 0px #0000008c;
+  border-radius: 0em;
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.popup img {
+  height: auto;
+  width: 100%;
 }
 
 }

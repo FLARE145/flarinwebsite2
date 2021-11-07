@@ -18,4 +18,28 @@ function randomImageOrder() {
 	}
 }
 
+function openPopup(image) {
+	let imageAdress = '/art-images/' + image;
+	let uri = image.slice(0, 5);
+	let newpage = document.getElementsByClassName("window")[0];
+	let cover = document.createElement("div");
+	cover.classList.add("popup-background");
+	cover.setAttribute("onclick","closePopup();");
+	newpage.appendChild(cover);
+	let preview = document.createElement("div");
+	preview.classList.add("popup");
+	preview.innerHTML = '<a href="/art.html?i=' + uri + '"><img src="' + imageAdress + '"></a>';
+	newpage.appendChild(preview);
+}
+
+function closePopup() {
+	let newpage = document.getElementsByClassName("window")[0];
+	newpage.innerHTML = '';
+}
+
+function readParam() {
+	let param = window.location.search;
+	console.log(param);
+}
+
 randomImageOrder();
