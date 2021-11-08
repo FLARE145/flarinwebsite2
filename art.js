@@ -25,14 +25,14 @@ function openPopup(image) {
 	let cover = document.createElement("div");
 	let screenWidth = window.screen.width;
 	if (screenWidth <= 1000) {
-		window.location.href = "https://flare145.com/art?=" + uri;
+		window.location.href = "https://flare145.com/artwork?=" + uri;
 	} else {
 		cover.classList.add("popup-background");
 		cover.setAttribute("onclick","closePopup();");
 		newpage.appendChild(cover);
 		let preview = document.createElement("div");
 		preview.classList.add("popup");
-		preview.innerHTML = '<a href="/art?i=' + uri + '"><img src="' + imageAdress + '"></a>';
+		preview.innerHTML = '<a href="/artwork?i=' + uri + '"><img src="' + imageAdress + '"></a>';
 		newpage.appendChild(preview);
 	}
 }
