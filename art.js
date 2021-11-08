@@ -23,13 +23,18 @@ function openPopup(image) {
 	let uri = image.slice(0, 5);
 	let newpage = document.getElementsByClassName("window")[0];
 	let cover = document.createElement("div");
-	cover.classList.add("popup-background");
-	cover.setAttribute("onclick","closePopup();");
-	newpage.appendChild(cover);
-	let preview = document.createElement("div");
-	preview.classList.add("popup");
-	preview.innerHTML = '<a href="/art?i=' + uri + '"><img src="' + imageAdress + '"></a>';
-	newpage.appendChild(preview);
+	let screenWidth = window.screen.width;
+	if (screenWidth <= 1000) {
+		window.location.href = "https://flare145.com/art?=" + uri;
+	} else {
+		cover.classList.add("popup-background");
+		cover.setAttribute("onclick","closePopup();");
+		newpage.appendChild(cover);
+		let preview = document.createElement("div");
+		preview.classList.add("popup");
+		preview.innerHTML = '<a href="/art?i=' + uri + '"><img src="' + imageAdress + '"></a>';
+		newpage.appendChild(preview);
+	}
 }
 
 function closePopup() {
