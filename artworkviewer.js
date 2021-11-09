@@ -2,6 +2,7 @@ let queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
 let image = urlParams.get('i');
 
+let imageLink = '';
 let png = new Image();
 png.src = '/art-images/' + image + '.png';
 
@@ -10,7 +11,7 @@ png.src = '/art-images/' + image + '.png';
 png.onload = function() {
     // image exists and is loaded
     document.getElementsByClassName("bigImageHolder")[0].appendChild(png);
-	let imageLink = 'https://flare145.com/art-images/' + image + '.png';
+	imageLink = 'https://flare145.com/art-images/' + image + '.png';
 }
 png.onerror = function() {
     // image did not load
@@ -19,7 +20,7 @@ png.onerror = function() {
     jpg.src = '/art-images/' + image + '.jpg';
 
     document.getElementsByClassName("bigImageHolder")[0].appendChild(jpg);
-	let imageLink = 'https://flare145.com/art-images/' + image + '.jpg';
+	imageLink = 'https://flare145.com/art-images/' + image + '.jpg';
 }
 
 let imageInfo = {};
