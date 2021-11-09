@@ -19,7 +19,7 @@ png.onerror = function() {
     jpg.src = '/art-images/' + image + '.jpg';
 
     document.getElementsByClassName("bigImageHolder")[0].appendChild(jpg);
-	imageLink = 'https://flare145.com/art-images/' + image + '.jpg';
+	let imageLink = 'https://flare145.com/art-images/' + image + '.jpg';
 }
 
 let imageInfo = {};
