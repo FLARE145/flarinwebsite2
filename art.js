@@ -25,7 +25,7 @@ function openPopup(image) {
 	let cover = document.createElement("div");
 	let screenWidth = window.screen.width;
 	if (screenWidth <= 1000) {
-		window.location.href = "https://flare145.com/artwork?=" + uri;
+		window.location.href = "https://flare145.com/artwork?i=" + uri;
 	} else {
 		cover.classList.add("popup-background");
 		cover.setAttribute("onclick","closePopup();");
