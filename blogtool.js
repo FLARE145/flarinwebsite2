@@ -83,8 +83,27 @@ function generateOutput() {
 	navigator.clipboard.writeText(document.getElementById("output").value);
 }
 
-
+//Close popup is stolen from art.js and the other thingy is from settings.js
+//there isnt a need to link those scripts entirely and it actually does weird stuff im just throwing these in here
 function closePopup() {
 	let newpage = document.getElementsByClassName("window")[0];
 	newpage.innerHTML = '';
+}
+
+function readCookie(name) {
+	if (document.cookie !== '') {
+	    let allCookies = document.cookie.split('; ');
+	    let cookieValue = allCookies.find(row => row.startsWith(name)).split('=')[1];
+	    return cookieValue;
+	}
+}
+
+if (readCookie('betaMode') === 'true') {
+	let bgElement = document.getElementById("globalBackground")
+	if (bgElement) {
+        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+	}
+	console.log('experimental mode is enabled')
+} else {
+	console.log('press s for secret settings');
 }
