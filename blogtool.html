@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <meta charset="UTF-8">
+	  <html lang="en">
+	  <title>FLARE145</title>
+	  <meta name="description" content="Yo it's me FLARE145 and I've got an official website now!">
+	  <meta name="keywords" content="flare 145, flare145">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/flarestyle.css">
+	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+	<div id="globalBackground">
+	</div>
+	<script src="settings.js"></script>
+    <body>
+      <main>
+		<div class="topbar">
+		  <a href="https://flare145.com/">
+		    <img src="/res/flare145logoisolated.svg" alt="flare145 logo" class="logo">
+		  </a>
+		</div>
+		<script src="blogtool.js"></script>
+		<div class="window">
+	      <div class="popup-background" onclick="closePopup();"></div>
+		  <div class="details" style="z-index:2000; position:fixed; right:0; left:0">
+		    <p>This is just a little tool for me. It's cool that you found this but there really isn't much for you here.<p>
+		  </div>
+	    </div>
+		<div style="display:inline-block; width:45%; float:left; margin-left:10px; margin-bottom:20px">
+		<h3>Input</h3>
+		<div id="paragraphs">
+		  <input type="button" id="addHButton" name="addHButton" onclick="addElement('heading')">
+		  <label for="addHButton">Add Heading</label><br>
+		  <input type="button" id="addPButton" name="addPButton" onclick="addElement('paragraph')">
+		  <label for="addPButton">Add Paragraph</label><br>
+		  <input type="button" id="addIButton" name="addIButton" onclick="addElement('image')">
+		  <label for="addIButton">Add Image</label><br>
+		  <input type="button" id="deletePButton" name="deletePButton" onclick="deleteElement()">
+		  <label for="deletePButton">Delete Element</label><br>
+		  <div id ="0" class="heading">
+		    <h4>Heading</h4>
+            <textarea name="headingBox" class="here" rows="1" cols="40"></textarea>
+		  </div>
+		  <div id ="1" class="paragraph">
+		    <h4>Paragraph</h4>
+		    <textarea name="paragraphBox" class="here" rows="8" cols="75"></textarea>
+		  </div>
+		</div>
+		</div>
+		<div style="display:inline-block; width:auto; float:left; margin-left:10px">
+		<h3>Output</h3>
+		<input type="button" id="generateButton" name="generateButton" onclick="generateOutput()">
+		<label for="generateButton">Generate Output</label><br>
+		<textarea id="output" name="output" rows="20" cols="75"></textarea>
+		</div>
+      </main>
+    </body>  
+  </html>
+
