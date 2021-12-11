@@ -27,7 +27,7 @@ function openPopup(image) {
 	if (screenWidth <= 1000) {
 		//This will be used when artwork viewer is more ready
 		//window.location.href = "https://flare145.com/artwork?i=" + uri;
-		window.open("https://flare145.com" + imageAdress + '"', '_blank');
+		window.open("https://flare145.com" + imageAdress, '_blank');
 	} else {
 		cover.classList.add("popup-background");
 		cover.setAttribute("onclick","closePopup();");
