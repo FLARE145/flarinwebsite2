@@ -54,6 +54,7 @@ figcaption{
 
 .topbar {
   display: block;
+  width: fit-content;
 }
 
 .linkimage {
