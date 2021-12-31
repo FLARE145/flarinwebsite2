@@ -153,6 +153,21 @@ figcaption{
   background-size: contain;
 }
 
+.arttile {
+  display: inline-block;
+  background: url("/res/artblack.png") no-repeat;
+  background-size: contain;
+  width: 65vmin;
+  height: 65vmin; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arttile:hover {
+  background: url("/res/artred.png") no-repeat;
+  background-size: contain;
+}
+
 .tilearray {
   text-align: center;
 }
@@ -314,6 +329,16 @@ figcaption{
 .blogtile {
   display: inline-block;
   background: url("/res/blogred.png") no-repeat;
+  background-size: contain;
+  width: 65vmin;
+  height: 65vmin; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arttile {
+  display: inline-block;
+  background: url("/res/artred.png") no-repeat;
   background-size: contain;
   width: 65vmin;
   height: 65vmin; 
