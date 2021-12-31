@@ -128,8 +128,8 @@ figcaption{
   display: inline-block;
   background: url("/res/linksblack.png") no-repeat;
   background-size: contain;
-  width: 65vmin;
-  height: 65vmin; 
+  width: 55vmin;
+  height: 55vmin; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -143,8 +143,8 @@ figcaption{
   display: inline-block;
   background: url("/res/blogblack.png") no-repeat;
   background-size: contain;
-  width: 65vmin;
-  height: 65vmin; 
+  width: 55vmin;
+  height: 55vmin; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,8 +158,8 @@ figcaption{
   display: inline-block;
   background: url("/res/artblack.png") no-repeat;
   background-size: contain;
-  width: 65vmin;
-  height: 65vmin; 
+  width: 55vmin;
+  height: 55vmin; 
   margin-left: auto;
   margin-right: auto;
 }
