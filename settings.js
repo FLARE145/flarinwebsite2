@@ -1,3 +1,5 @@
+//cookie functions
+
 function writeCookie(name, property) {
     document.cookie = name + '=' + property + '; ';
 }
@@ -18,11 +20,17 @@ function clearCookies() {
 	}
 }
 
+
+//settings shortcut
+
 document.addEventListener("keypress", function(event) {
   if (event.key == 's') {
     window.location.href = "https://flare145.com/settings";
   }
 });
+
+
+//activate changes
 
 if (readCookie('betaMode') === 'true') {
 	let bgElement = document.getElementById("globalBackground")
@@ -31,6 +39,6 @@ if (readCookie('betaMode') === 'true') {
 	}
 	console.log('experimental mode is enabled')
 } else {
+	document.getElementsByClassName("newsbar")[0].style.display = "none";
 	console.log('press s for secret settings');
 }
-
