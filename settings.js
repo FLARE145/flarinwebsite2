@@ -29,6 +29,26 @@ document.addEventListener("keypress", function(event) {
   }
 });
 
+//newsbar stuff
+
+function toggleElement(){
+	let element = document.getElementsByClassName("newsbar")[0];
+	if (element.style.display === "none") {
+		element.style.display = "grid";
+		document.getElementsByClassName("togglebutton")[0].style.bottom = "29px";
+		document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(180deg)";
+		writeCookie('news', true);
+    } else {
+    element.style.display = "none";
+	document.getElementsByClassName("togglebutton")[0].style.bottom = "0px";
+	document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(0deg)";
+	deleteCookie('news');
+    }
+}
+
+if (readCookie('news') === 'true') {
+	toggleElement();
+}
 
 //activate changes
 
@@ -39,6 +59,5 @@ if (readCookie('betaMode') === 'true') {
 	}
 	console.log('experimental mode is enabled')
 } else {
-	document.getElementsByClassName("newsbar")[0].style.display = "none";
 	console.log('press s for secret settings');
 }

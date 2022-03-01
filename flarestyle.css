@@ -69,6 +69,20 @@ figcaption{
   position: fixed;
 }
 
+.togglebutton {
+  background: url("/res/uparrow.svg") no-repeat;
+  background-size: 75%;
+  background-position: center;
+  background-color: ;
+  display: block;
+  z-index: 99;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right:0px;
+  bottom: 0px;
+}
+
 .linkimage {
   display: inline-block;
   width: auto;
