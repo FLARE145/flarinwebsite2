@@ -6,10 +6,15 @@ function writeCookie(name, property) {
 function readCookie(name) {
 	if (document.cookie !== '') {
 	    let allCookies = document.cookie.split('; ');
-	    let cookieValue = allCookies.find(row => row.startsWith(name)).split('=')[1];
-	    return cookieValue;
-	}
+		let expected = name + '=true';
+		if (allCookies.find(row => row.startsWith(name)) === expected) {
+			let cookieValue = allCookies.find(row => row.startsWith(name)).split('=')[1];
+	        return cookieValue;
+		} else{
+			return false;
+	}}
 }
+
 function deleteCookie(name) {
 	document.cookie = name + '=' + ';expires=Thu, 01 Jan 1970 00:00:00 GMT '; 
 }
@@ -58,6 +63,6 @@ if (readCookie('betaMode') === 'true') {
         document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	}
 	console.log('experimental mode is enabled')
-} else {
-	console.log('press s for secret settings');
+	} else {
+		console.log('press s for secret settings');
 }
