@@ -72,28 +72,28 @@ if (readCookie('betaMode') === 'true') {
 
 
 let pos = window.innerWidth/2;
-let pos2 = window.innerWidth;
+//let pos2 = window.innerWidth;
 
 
 function scrollElement(){
 	let element = document.getElementById('scrollText');
 	let width = element.offsetWidth;
 	pos -= .25;
-	let elementF = document.getElementById('fetchText');
-	let widthF = elementF.offsetWidth;
+	//let elementF = document.getElementById('fetchText');
+	//let widthF = elementF.offsetWidth;
 	endpoint = pos + width;
-	pos2 = endpoint + window.innerWidth/2;
+	//pos2 = endpoint + window.innerWidth/2;
 	let posString = pos + "px";
-	let posString2 = pos2 + "px";
+	//let posString2 = pos2 + "px";
 	element.style.marginLeft = posString;
-	elementF.style.marginLeft = posString2;
+	//elementF.style.marginLeft = posString2;
 	if (pos < 0-width){
 		pos = window.innerWidth;
 		updateNews();
 	}
-	if (pos2 < 0-widthF){
+	/*if (pos2 < 0-widthF){
 		pos2 = window.innerWidth;
-	}
+	}*/
 }
 
 window.onload = function(){

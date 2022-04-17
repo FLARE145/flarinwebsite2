@@ -111,7 +111,7 @@ figcaption{
 #scrollText {
   display: inline;
   color: white;
-  margin: 3px;
+  margin: 3.5px;
   width: fit-content;
 }
 
@@ -160,7 +160,7 @@ figcaption{
 }
 
 .about {
-  background-color: #cc000ff2;
+  background-color: #cf0d1b;
   margin-left: -8px;
   margin-right: -8px;
   margin-top: 8px;
