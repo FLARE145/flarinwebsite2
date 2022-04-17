@@ -37,6 +37,7 @@ document.addEventListener("keypress", function(event) {
 //newsbar stuff
 
 function toggleElement(){
+	if (document.getElementsByClassName("newsbar")[0]){
 	let element = document.getElementsByClassName("newsbar")[0];
 	if (element.style.display === "none") {
 		element.style.display = "grid";
@@ -49,6 +50,7 @@ function toggleElement(){
 	document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(0deg)";
 	deleteCookie('news');
     }
+	}
 }
 
 if (readCookie('news') === 'true') {
@@ -97,8 +99,10 @@ function scrollElement(){
 }
 
 window.onload = function(){
+	if (document.getElementsByClassName('newsbar')[0]){
 	updateNews();
 	setInterval(scrollElement,5);
+	}
 };
 
 function createNews(){
