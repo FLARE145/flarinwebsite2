@@ -1,6 +1,38 @@
 body {
   background-color: #FCFCFC;
+  overflow:overlay;
 }
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
 
 #globalBackground{
   position: fixed;
@@ -21,6 +53,12 @@ body {
 p{
   font-family: "Franklin Gothic Light";
   font-size: 20px;
+}
+
+h1 {
+  font-family: "Franklin Gothic Light";
+  font-size: 40px;
+  color: red;
 }
 
 h2 {
@@ -50,23 +88,39 @@ figcaption{
   margin-bottom:2em;
   width: 39vmin;
   height: 10vmin; 
+  padding: 8px;
 }
 
 .topbar {
-  display: block;
+  display: fixed;
   width: fit-content;
 }
 
 .newsbar {
-  display: grid;
+  display: block;
   background: black;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: hidden;
-  width: fit-content;
   height: 30px;
-  position: fixed;
+  position: absolute;
+  word-break: break-all;
+}
+
+#scrollText {
+  display: inline;
+  color: white;
+  margin: 3px;
+  width: fit-content;
+}
+
+#fetchText {
+  display: inline;
+  color: white;
+  margin: 3px;
+  width: fit-content;
+  position: absolute;
 }
 
 .togglebutton {
@@ -76,11 +130,18 @@ figcaption{
   background-color: ;
   display: block;
   z-index: 99;
-  position: fixed;
+  position: absolute;
   width: 35px;
   height: 35px;
-  right:0px;
+  right:12px;
   bottom: 0px;
+}
+
+.togglebutton:hover {
+  background: url("/res/uparrowred.svg") no-repeat;
+  background-size: 75%;
+  background-position: center;
+  cursor: pointer;
 }
 
 .linkimage {
@@ -88,6 +149,43 @@ figcaption{
   width: auto;
   height: 15vmin; 
   margin: 2em;
+}
+
+.topcover {
+  position: relative;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #00000007;
+  margin: -8px;
+}
+
+.about {
+  background-color: #cc000ff2;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: 8px;
+  margin-bottom: -8px;
+  top: 0;
+}
+
+.about p {
+  color: #ffe0e0;
+}
+
+.about h1 {
+  color: white;
+}
+
+.about h2 {
+  color: white;
+}
+
+.about a:link {
+  color: white;
+}
+
+.about a:visited {
+  color: white;
 }
 
 /* Tiles for links page */
@@ -196,7 +294,9 @@ figcaption{
 }
 
 .tilearray {
+  margin-top:8vmin;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 /* flex */
