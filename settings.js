@@ -114,7 +114,7 @@ function createNews(){
 function updateNews(){
 	fetch("news.txt").then(function(response) {
 	  response.text().then(function(text) {
-		document.getElementById("scrollText").innerHTML = 'Announcements:  ' + text.repeat(10) + 'Announcements will return momentarily';
+		document.getElementById("scrollText").innerHTML = 'Announcements:  ' + text.repeat(5) + 'Announcements will return momentarily';
 		});
 	});
 }
