@@ -106,12 +106,18 @@ figcaption{
   height: 30px;
   position: absolute;
   word-break: break-all;
+  line-height: 30px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 #scrollText {
   display: inline;
   color: white;
-  margin: 3.5px;
+  margin: 0.5px;
   width: fit-content;
 }
 

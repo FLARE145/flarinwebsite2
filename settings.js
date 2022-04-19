@@ -114,7 +114,7 @@ function createNews(){
 function updateNews(){
 	fetch("news.txt").then(function(response) {
 	  response.text().then(function(text) {
-		document.getElementById("scrollText").innerHTML = 'News Feed:  ' + text + text + text + text + text + '  End of broadcast';
+		document.getElementById("scrollText").innerHTML = 'Announcements:  ' + text.repeat(10) + 'Announcements will return momentarily';
 		});
 	});
 }
