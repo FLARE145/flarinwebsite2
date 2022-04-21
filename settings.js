@@ -80,7 +80,7 @@ if (readCookie('betaMode') === 'true') {
         document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	}
 	//enable ads
-	if (document.getElementsByClassName('post')[0] != 'undefined'){
+	if (document.getElementsByClassName('post')[0] != undefined){
 		console.log('yes');
 		let ad = document.createElement("div");
 		ad.classList.add("post");
