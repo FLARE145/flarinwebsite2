@@ -57,17 +57,43 @@ if (readCookie('news') === 'true') {
 	toggleElement();
 }
 
+
+//ad
+
+let adCode = '';
+
+function getAd(){
+	fetch("ad.txt").then(function(response) {
+	  response.text().then(function(text) {
+		ad = document.getElementsByClassName("post")[1];
+		ad.innerHTML = text;
+		});
+	});
+}
+
 //activate changes
 
 if (readCookie('betaMode') === 'true') {
+	//background change
 	let bgElement = document.getElementById("globalBackground")
 	if (bgElement) {
         document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+	}
+	//enable ads
+	if (document.getElementsByClassName('post')[0] != 'undefined'){
+		console.log('yes');
+		let ad = document.createElement("div");
+		ad.classList.add("post");
+		let parentDiv = document.getElementById("main");
+		let secondPost = document.getElementsByClassName("post")[1];
+		parentDiv.insertBefore(ad, secondPost);
+		getAd();
 	}
 	console.log('experimental mode is enabled')
 	} else {
 		console.log('press s for secret settings');
 }
+
 
 //scroolll
 
