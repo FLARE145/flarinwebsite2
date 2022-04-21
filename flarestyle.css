@@ -161,7 +161,7 @@ figcaption{
   position: relative;
   min-height: 100vh;
   overflow: auto;
-  background-color: #00000007;
+  background-color: transparent;
   margin: -8px;
 }
 
