@@ -403,7 +403,8 @@ figcaption{
 .post {
   display: block;
   background-color: white;
-  box-shadow: 1px 4px 6px #e2e2e2;
+  /*box-shadow: 1px 4px 6px #e2e2e2;*/
+  box-shadow: 1px 4px 12px #5858586b;
   width: 875px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -411,9 +412,9 @@ figcaption{
   margin-right: auto;
   padding: 1px 16px;
   border-radius: .5em;
-  border-style: solid;
+  /*border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
+  border-color: #E6E6E6;*/
 }
 
 .bttbutton {
