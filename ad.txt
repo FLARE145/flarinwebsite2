@@ -9,3 +9,4 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<img src="/res/placeholderad.gif" alt="ad" style="width:100%;margin-bottom:12px;">
