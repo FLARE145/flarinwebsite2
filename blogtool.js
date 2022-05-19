@@ -44,7 +44,7 @@ function generateHeading(content) {
 	let day = new Date();
 	let year = day.getFullYear().toString().slice(2);
 	let fullDate = day.getMonth() + 1 + '/' + day.getDate() + '/' + year
-	return '          <h2>' + fullDate + ' - ' + content + '</h2>' + '\n';
+	return '          <a href="https://flare145.com/blog/' + fixTitle() + '" class="blogTitle"><h2>' + content + '</h2></a>' + '\n' + '          <p class="date">' + fullDate + '</p>' + '\n';
 }
 function generateImage(content) {
 	let source = content.getElementsByClassName("imageSource")[0].value;
@@ -57,6 +57,33 @@ function generateImage(content) {
 		size = content.getElementsByClassName("wide")[0].value;
 	}
 	return '          <figure>' + '\n' + '            <img src="' + source + '" alt="' + alt + '" style="width:' + size + 'vmin; display:inline; max-width:790px;">' + '\n' + '            <figcaption>' + caption + '</figcaption>' + '\n' + '          </figure>' + '\n';
+}
+function fixTitle() {
+	let title = document.getElementById("0").getElementsByClassName("here")[0].value;
+	title = title.replaceAll(' ', '-');
+	title = title.replaceAll('"', '');
+	title = title.replaceAll('!', '');
+	title = title.replaceAll('?', '');
+	title = title.replaceAll('.', '');
+	title = title.replaceAll("'", '');
+	title = title.replaceAll(',', '');
+	title = title.replaceAll('\\', '');
+	title = title.replaceAll('/', '');
+	title = title.replaceAll(':', '');
+	title = title.replaceAll(';', '');
+	title = title.toLowerCase();
+	return title;
+}
+function generateUrl() {
+	let title = fixTitle();
+	title = 'https://flare145.com/blog/' + title;
+	console.log(title);
+	return title;
+}
+function generateFileName() {
+	let title = fixTitle();
+	title = title + '.html';
+	return title;
 }
 function generateElement(element) {
 	switch(element.className) {
@@ -79,8 +106,10 @@ function generateOutput() {
 		let currentE = document.getElementById(i);
 		output += generateElement(currentE);
 	}
-	document.getElementById("output").value = '        <div class="post">' + '\n' + output + '        </div>';
+	document.getElementById("output").value = '        <div class="post">' + '\n' + output + '          <p class="centertext"><a id="share" href="javascript: void(0);" onclick="copyToClipboard(\'' + generateUrl() + '\', \'share\')">Share</a></p>' +'\n' + '        </div>';
 	navigator.clipboard.writeText(document.getElementById("output").value);
+	document.getElementById("outputUrl").value = generateUrl();
+	document.getElementById("outputFileName").value = generateFileName();
 }
 
 //Close popup is stolen from art.js and the other thingy is from settings.js

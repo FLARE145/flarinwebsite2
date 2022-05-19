@@ -25,6 +25,22 @@ function clearCookies() {
 	}
 }
 
+//misc
+
+function copyToClipboard(text, id) {
+	navigator.clipboard.writeText(text);
+	ogText = document.getElementById(id).innerHTML;
+	document.getElementById(id).innerHTML = 'Link copied to clipboard';
+	document.getElementById(id).style.color = 'red';
+	ogClick = document.getElementById(id).onclick;
+	document.getElementById(id).onclick = '';
+	setTimeout(() => {
+			document.getElementById(id).style.color = '';
+			document.getElementById(id).innerHTML = ogText;
+			document.getElementById(id).onclick = ogClick;
+		}, 2500);
+}
+
 
 //settings shortcut
 

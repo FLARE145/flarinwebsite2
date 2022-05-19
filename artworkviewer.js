@@ -32,19 +32,19 @@ fetch('https://flare145.com/image-info/' + image + '.json')
 	imageInfo = data;
 	let title = document.createElement("p");
 	title.innerText = imageInfo.title;
-	document.getElementsByClassName("details")[0].appendChild(title);
+	document.getElementsByClassName("post")[0].appendChild(title);
 	let medium = document.createElement("p");
 	medium.innerText = imageInfo.medium;
-	document.getElementsByClassName("details")[0].appendChild(medium);
+	document.getElementsByClassName("post")[0].appendChild(medium);
 	let resolution = document.createElement("p");
 	resolution.innerText = imageInfo.resolution;
-	document.getElementsByClassName("details")[0].appendChild(resolution);
+	document.getElementsByClassName("post")[0].appendChild(resolution);
 	let size = document.createElement("p");
 	size.innerText = imageInfo.size;
-	document.getElementsByClassName("details")[0].appendChild(size);
+	document.getElementsByClassName("post")[0].appendChild(size);
 	let description = document.createElement("p");
 	description.innerText = imageInfo.description;
-	document.getElementsByClassName("details")[0].appendChild(description);
+	document.getElementsByClassName("post")[0].appendChild(description);
 });
 
 function linkTo() {
