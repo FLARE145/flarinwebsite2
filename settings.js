@@ -79,7 +79,7 @@ if (readCookie('news') === 'true') {
 let adCode = '';
 
 function getAd(){
-	fetch("https://flare145.ad.txt").then(function(response) {
+	fetch("https://flare145.com/ad.txt").then(function(response) {
 	  response.text().then(function(text) {
 		ad = document.getElementsByClassName("post")[1];
 		ad.innerHTML = text;
