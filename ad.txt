@@ -1,12 +1,2 @@
-<h2>Advertisement</h2>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2777009948321544"
-     crossorigin="anonymous"></script>
-<!-- Responsive boi -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-2777009948321544"
-     data-ad-slot="3564038979"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<img src="/res/placeholderad.gif" alt="ad" style="width:100%;margin-bottom:12px;">
+<h2 style="color:black;">Advertisement</h2>
+<img src="/res/buyspacead.jpg" alt="ad" style="width:100%;margin-bottom:12px;">
