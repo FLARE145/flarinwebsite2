@@ -1,2 +1,2 @@
 <h2 style="color:black;">Advertisement</h2>
-<img src="/res/buyspacead.jpg" alt="ad" style="width:100%;margin-bottom:12px;">
+<a href="https://twitter.com/FLARE_145" target="_blank" rel="noopener"><img src="/res/buyspacead.jpg" alt="ad" style="width:100%;margin-bottom:12px;"></a>

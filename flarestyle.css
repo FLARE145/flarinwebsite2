@@ -130,7 +130,9 @@ a:active {
   tab-index: 1;
   margin-left: 0em;
   margin-right: auto;
-  margin-bottom:2em;
+  margin-bottom:2em; 
+  top: 3vmin;
+  left: 3vmin;
   width: 39vmin;
   height: 10vmin; 
   /*padding: 8px;*/
@@ -138,44 +140,67 @@ a:active {
 
 .topbar {
   display: fixed;
-  height: 10vmin;
+  height: 13vmin;
   overflow: hidden;
-  padding: 16px;
+  /*padding: 16px;*/
   margin: -8px 0px 2em -8px;
 }
 
 .toparrow{
   display: inline-block;
+  position: absolute;
   background: url("/res/uparrow.svg") no-repeat;
   background-size: contain;
   margin-left: 0em;
   margin-right: auto;
   margin-bottom:2.5em;
   transform:rotate(90deg);
+  top:8vmin;
+  left:40vmin;
   width:5vmin;
   height:5vmin;
 }
 
 .arttitle {
   display: inline-block;
+  position: absolute;
   background: url("/res/arttitle.svg") no-repeat;
   background-size: contain;
   margin-left: 0em;
   margin-right: auto;
   margin-bottom:2em;
+  top:8vmin;
+  left:46vmin;
   height:5vmin;
   width:12vmin;
 }
 
 .blogtitle {
   display: inline-block;
+  position: absolute;
   background: url("/res/blogtitle.svg") no-repeat;
   background-size: contain;
   margin-left: 0em;
   margin-right: auto;
   margin-bottom:2em;
+  top:8vmin;
+  left:46vmin;
   height:5vmin;
-  width:17vmin;
+  width:19vmin;
+}
+
+.linkstitle {
+  display: inline-block;
+  position: absolute;
+  background: url("/res/linkstitle.svg") no-repeat;
+  background-size: contain;
+  margin-left: 0em;
+  margin-right: auto;
+  margin-bottom:2em;
+  top:8vmin;
+  left:46vmin;
+  height:5vmin;
+  width:19vmin;
 }
 
 .newsbar {
@@ -382,7 +407,7 @@ a:active {
 }
 
 .tilearray {
-  margin-top:8vmin;
+  margin-top:10vmin;
   text-align: center;
   margin-bottom: 80px;
 }
