@@ -525,6 +525,20 @@ a:active {
   border-color: #E6E6E6;*/
 }
 
+.ad {
+  display: block;
+  background-color: white;
+  box-shadow: 1px 4px 12px #5858586b;
+  width: 875px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px 16px;
+  border-radius: .5em;
+  text-align: center;
+}
+
 .bttbutton {
   background: url("/res/uparrow.svg") no-repeat;
   background-size: 75%;
@@ -553,6 +567,28 @@ a:active {
   border-color: #e6e6e6;
   border-style: solid;
   border-width: 2px;
+}
+
+#loadMore {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  width: 125px;
+  height: 35px;
+  background-color: white;
+  border-radius: .5em;
+  box-shadow: 1px 4px 12px #5858586b;
+  font-size: 20px;
+  font-family: "Franklin Gothic Light";
+  text-align: center;
+  padding-top: 9px;
+}
+
+#loadMore:hover {
+  font-family: "Franklin Gothic Light";
+  color: red;
+  cursor: pointer;
 }
 
 /*Magazine stuff */
@@ -645,6 +681,15 @@ a:active {
   margin-right: 1em;
 }
 
+.ad {
+  display: block;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .bttbutton {
   background: url("/res/uparrowred.svg") no-repeat;
   background-size: 75%;
@@ -661,6 +706,23 @@ a:active {
   height: 35px;
   right:15px;
   bottom: 15px;
+}
+
+#loadMore {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  width: 125px;
+  height: 35px;
+  background-color: white;
+  border-radius: .5em;
+  box-shadow: 1px 4px 12px #5858586b;
+  font-size: 20px;
+  font-family: "Franklin Gothic Light";
+  text-align: center;
+  padding-top: 9px;
+  color: red;
 }
 
 .imageHolder {

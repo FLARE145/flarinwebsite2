@@ -38,13 +38,13 @@ function deleteElement() {
 	elem.remove();
 }
 function generateParagraph(content) {
-	return '          <p>' + content + '</p>' + '\n';
+	return '<p>' + content + '</p>' + '\n';
 }
 function generateHeading(content) {
 	let day = new Date();
 	let year = day.getFullYear().toString().slice(2);
 	let fullDate = day.getMonth() + 1 + '/' + day.getDate() + '/' + year
-	return '          <a href="https://flare145.com/blog/' + fixTitle() + '" class="blogTitle"><h2>' + content + '</h2></a>' + '\n' + '          <p class="date">' + fullDate + '</p>' + '\n';
+	return '<h2>' + content + '</h2>' + '\n' + '<p class="date">' + fullDate + '</p>' + '\n';
 }
 function generateImage(content) {
 	let source = content.getElementsByClassName("imageSource")[0].value;
@@ -56,7 +56,7 @@ function generateImage(content) {
 	} else {
 		size = content.getElementsByClassName("wide")[0].value;
 	}
-	return '          <figure>' + '\n' + '            <img src="' + source + '" alt="' + alt + '" style="width:' + size + 'vmin; display:inline; max-width:790px;">' + '\n' + '            <figcaption>' + caption + '</figcaption>' + '\n' + '          </figure>' + '\n';
+	return '<figure>' + '\n' + '  <img src="' + source + '" alt="' + alt + '" style="width:' + size + 'vmin; display:inline; max-width:790px;">' + '\n' + '  <figcaption>' + caption + '</figcaption>' + '\n' + '</figure>' + '\n';
 }
 function fixTitle() {
 	let title = document.getElementById("0").getElementsByClassName("here")[0].value;
@@ -85,6 +85,9 @@ function generateFileName() {
 	title = title + '.html';
 	return title;
 }
+function copyName(){
+	navigator.clipboard.writeText(document.getElementById("outputFileName").value);
+}
 function generateElement(element) {
 	switch(element.className) {
 		case 'heading':
@@ -106,9 +109,9 @@ function generateOutput() {
 		let currentE = document.getElementById(i);
 		output += generateElement(currentE);
 	}
-	document.getElementById("output").value = '        <div class="post">' + '\n' + output + '          <p class="centertext"><a id="share" href="javascript: void(0);" onclick="copyToClipboard(\'' + generateUrl() + '\', \'share\')">Share</a></p>' +'\n' + '        </div>';
+	document.getElementById("output").value = output;
 	navigator.clipboard.writeText(document.getElementById("output").value);
-	document.getElementById("outputUrl").value = generateUrl();
+	//document.getElementById("outputUrl").value = generateUrl();
 	document.getElementById("outputFileName").value = generateFileName();
 }
 
