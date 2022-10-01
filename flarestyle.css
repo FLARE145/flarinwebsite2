@@ -723,6 +723,7 @@ a:active {
   text-align: center;
   padding-top: 9px;
   color: red;
+  user-select: none;
 }
 
 .imageHolder {
