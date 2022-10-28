@@ -115,7 +115,7 @@ if (readCookie('betaMode') === 'true') {
 
 
 
-let pos = window.innerWidth/2;
+let pos = window.innerWidth*.25;
 //let pos2 = window.innerWidth;
 
 
