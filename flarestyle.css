@@ -591,6 +591,16 @@ a:active {
   cursor: pointer;
 }
 
+.loadingGif{
+  display: block;
+  background: url(/res/loading.gif) no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Magazine stuff */
 
 .magazinePage {

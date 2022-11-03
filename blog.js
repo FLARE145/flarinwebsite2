@@ -35,6 +35,7 @@ function loadPosts(start) {
 			document.getElementById("loadMore").remove();
 		};
 		adActivate();
+		removeLoadGif();
 	});
 };
 
@@ -66,3 +67,7 @@ function addElement(postContents){
 function triggerLoad(){
 	loadPosts(postCount);
 };
+
+function removeLoadGif(){
+	document.getElementsByClassName("loadingGif")[0].remove();
+}
