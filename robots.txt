@@ -1,2 +1,5 @@
 User-agent: Googlebot-Image
 Disallow: /blogimages/081621comic.png
+
+User-agent: Googlebot-Image
+Disallow: /blogimages/103122collab.png
