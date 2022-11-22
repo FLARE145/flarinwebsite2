@@ -420,6 +420,21 @@ a:active {
   background-size: contain;
 }
 
+.projectstile {
+  display: inline-block;
+  background: url("/res/projectsblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 55vmin; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectstile:hover {
+  background: url("/res/projectsred.png") no-repeat;
+  background-size: contain;
+}
+
 .tilearray {
   margin-top:10vmin;
   text-align: center;
@@ -865,6 +880,11 @@ a:active {
 .popup img {
   height: auto;
   width: 100%;
+}
+
+.yt{
+  width:300px;
+  height:169px;
 }
 
 }
