@@ -375,70 +375,64 @@ a:active {
 
 /* Tiles for main page */
 
-.linkstile {
+.frontTile {
   display: inline-block;
-  background: url("/res/linksblack.png") no-repeat;
-  background-size: contain;
-  width: 55vmin;
-  height: 55vmin; 
-  margin-left: auto;
-  margin-right: auto;
+  width: 25vw;
+  height: 45vmin;
+  min-width: 160px;
+  min-height: 194px;
+  flex-shrink: 1;
 }
 
-.linkstile:hover {
+#linkstile {
+  background: url("/res/linksblack.png") no-repeat;
+  background-size: contain;
+}
+
+#linkstile:hover {
   background: url("/res/linksred.png") no-repeat;
   background-size: contain;
 }
 
-.blogtile {
-  display: inline-block;
+#blogtile {
   background: url("/res/blogblack.png") no-repeat;
   background-size: contain;
-  width: 55vmin;
-  height: 55vmin; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.blogtile:hover {
+#blogtile:hover {
   background: url("/res/blogred.png") no-repeat;
   background-size: contain;
 }
 
-.arttile {
-  display: inline-block;
+#arttile {
   background: url("/res/artblack.png") no-repeat;
   background-size: contain;
-  width: 55vmin;
-  height: 55vmin; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.arttile:hover {
+#arttile:hover {
   background: url("/res/artred.png") no-repeat;
   background-size: contain;
 }
 
-.projectstile {
-  display: inline-block;
+#projectstile {
   background: url("/res/projectsblack.png") no-repeat;
   background-size: contain;
-  width: 55vmin;
-  height: 55vmin; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.projectstile:hover {
+#projectstile:hover {
   background: url("/res/projectsred.png") no-repeat;
   background-size: contain;
 }
 
 .tilearray {
-  margin-top:10vmin;
+  display: flex;
   text-align: center;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  height: calc(100vh - 25vmin);
+  flex-direction: column;
 }
 
 /* flex */
@@ -705,34 +699,24 @@ a:active {
 /* Mobile changes */
 
 @media only screen and (max-width: 1000px) {
-.linkstile {
-  display: inline-block;
+#linkstile {
   background: url("/res/linksred.png") no-repeat;
   background-size: contain;
-  width: 65vmin;
-  height: 65vmin; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.blogtile {
-  display: inline-block;
+#blogtile {
   background: url("/res/blogred.png") no-repeat;
   background-size: contain;
-  width: 65vmin;
-  height: 65vmin; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.arttile {
-  display: inline-block;
+#arttile {
   background: url("/res/artred.png") no-repeat;
   background-size: contain;
-  width: 65vmin;
-  height: 65vmin; 
-  margin-left: auto;
-  margin-right: auto;
+}
+
+#projectstile {
+  background: url("/res/projectsred.png") no-repeat;
+  background-size: contain;
 }
 
 .newgrounds {
