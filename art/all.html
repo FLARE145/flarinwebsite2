@@ -4,22 +4,14 @@
 	  <meta charset="UTF-8">
 	  <html lang="en">
 	  <title>FLARE145 - Art</title>
-	  <meta name="description" content="Artwork from FLARE145">
+	  <meta name="description" content="All Artwork from FLARE145">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="/flarestyle.css">
 	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204532029-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-204532029-1');
-		</script>
     </head>
 	<div id="globalBackground">
 	</div>
+	<script src="settings.js"></script>
 	<div class="window">
 	</div>
     <body>
@@ -47,10 +39,18 @@
 				"position": 2,
 				"name": "Art",
 				"item": "https://flare145.com/art"
+			  },{
+				"@type": "ListItem",
+				"position": 3,
+				"name": "All",
+				"item": "https://flare145.com/art/all"
 			  }]
 			}
 		</script>
-		<div style="text-align:center;" id="insertFeature">
+		<div style="text-align:center;">
+		  <a style="font-size:30px;display:inline-block;text-decoration:none;" href="https://flare145.com/art"><p style="font-size:30px;">Featured</p></a>
+		  <p style="font-size:30px;display:inline-block;"> | </p>
+		  <p style="font-size:30px;color:grey;display:inline-block;">All</p>
 		</div>
 		<div class="flexZone" style="float:left;">
 		  <!--og-->	
@@ -142,8 +142,6 @@
 		  </div>
 		  <script src="art.js"></script>
 		</div>
-		<script src="settings.js"></script>
       </main>
     </body>  
   </html>
-

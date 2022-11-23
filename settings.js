@@ -94,8 +94,8 @@ if (readCookie('betaMode') === 'true') {
 	let bgElement = document.getElementById("globalBackground")
 	if (bgElement) {
         document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
-	}
-	//enable ads
+	};
+	//enable ads    btw no idea why this doesn't run anymore but it shouldn't so we good
 	if (document.getElementsByClassName('post')[0] != undefined){
 		console.log('yes');
 		let ad = document.createElement("div");
@@ -104,11 +104,16 @@ if (readCookie('betaMode') === 'true') {
 		let secondPost = document.getElementsByClassName("post")[1];
 		parentDiv.insertBefore(ad, secondPost);
 		getAd();
-	}
+	};
+	//enables art page links
+	if (document.getElementById("insertFeature") != undefined){
+		document.getElementById("insertFeature").innerHTML = "<p style=\"font-size:30px;color:grey;display:inline-block;\">Featured</p><p style=\"font-size:30px;display:inline-block;\"> | </p><a style=\"font-size:30px;display:inline-block;text-decoration:none;\"href=\"https://flare145.com/art/all\"><p style=\"font-size:30px;\">All</p></a>";
+		console.log("inserted feature");
+	};
 	console.log('experimental mode is enabled')
 	} else {
 		console.log('press s for secret settings');
-}
+};
 
 
 //scroolll
