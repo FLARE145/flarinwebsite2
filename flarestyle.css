@@ -387,41 +387,49 @@ a:active {
 #linkstile {
   background: url("/res/linksblack.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #linkstile:hover {
   background: url("/res/linksred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #blogtile {
   background: url("/res/blogblack.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #blogtile:hover {
   background: url("/res/blogred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #arttile {
   background: url("/res/artblack.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #arttile:hover {
   background: url("/res/artred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #projectstile {
   background: url("/res/projectsblack.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #projectstile:hover {
   background: url("/res/projectsred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .tilearray {
