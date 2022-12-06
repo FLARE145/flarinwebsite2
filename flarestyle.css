@@ -710,21 +710,25 @@ a:active {
 #linkstile {
   background: url("/res/linksred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #blogtile {
   background: url("/res/blogred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #arttile {
   background: url("/res/artred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #projectstile {
   background: url("/res/projectsred.png") no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .newgrounds {
