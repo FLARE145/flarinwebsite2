@@ -731,6 +731,14 @@ a:active {
   background-position: center;
 }
 
+.tilearray {
+  flex-direction:row;
+}
+
+.frontTile{
+  width:45vw;
+}
+
 .newgrounds {
   display: inline-block;
   background: url("/res/newgrounds.png") no-repeat;
