@@ -747,6 +747,7 @@ a:active {
 
 .tilearray {
   flex-direction:row;
+  transform: translateY(-7vmin);
 }
 
 .frontTile{
