@@ -105,11 +105,7 @@ if (readCookie('betaMode') === 'true') {
 		parentDiv.insertBefore(ad, secondPost);
 		getAd();
 	};
-	//enables art page links
-	if (document.getElementById("insertFeature") != undefined){
-		document.getElementById("insertFeature").innerHTML = "<p style=\"font-size:30px;color:grey;display:inline-block;\">Featured</p><p style=\"font-size:30px;display:inline-block;\"> | </p><a style=\"font-size:30px;display:inline-block;text-decoration:none;\"href=\"https://flare145.com/art/all\"><p style=\"font-size:30px;\">All</p></a>";
-		console.log("inserted feature");
-	};
+	//message
 	console.log('experimental mode is enabled')
 	} else {
 		console.log('press s for secret settings');
