@@ -50,6 +50,14 @@ document.addEventListener("keypress", function(event) {
   }
 });
 
+if (readCookie('visited') === 'true') {
+	console.log('you are a returning user');
+	} else {
+		writeCookie('news', true);
+		writeCookie('visited', true);
+		console.log('this is your first visit!');
+};
+
 //newsbar stuff
 
 function toggleElement(){
