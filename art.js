@@ -28,7 +28,7 @@ function openPopup(image) {
 		//This will be used when artwork viewer is more ready
 		//window.location.href = "https://flare145.com/artwork?i=" + uri;
 		//window.open("https://flare145.com" + imageAdress, '_blank');
-		window.open("https://flare145.com/artwork/" + uri, '_blank');
+		location.href = "https://flare145.com/artwork/" + uri;
 	} else {
 		cover.classList.add("popup-background");
 		cover.setAttribute("onclick","closePopup();");
@@ -37,7 +37,7 @@ function openPopup(image) {
 		preview.classList.add("popup");
 		//This will be used when artwork viewer is more ready
 		//preview.innerHTML = '<a href="/artwork?i=' + uri + '"><img src="' + imageAdress + '"></a>';
-		preview.innerHTML = '<a target="_blank" href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
+		preview.innerHTML = '<a href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
 		//preview.innerHTML = '<a href="' + imageAdress + '" target="_blank"><img src="' + imageAdress + '"></a>';
 		newpage.appendChild(preview);
 	}
