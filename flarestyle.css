@@ -460,6 +460,9 @@ a:active {
 
 .imageHolder {
   background-color: white;
+  background-image: url(/res/loading.gif);
+  background-size: cover;
+  background-position: center;
   box-shadow: 1px 4px 12px #5858586b;
   height: fit-content;
   border-radius: .8em;
@@ -477,6 +480,9 @@ a:active {
 
 .bigImageHolder {
   background-color: white;
+  background-image: url(/res/loading.gif);
+  background-size: cover;
+  background-position: center;
   box-shadow: 1px 4px 12px #5858586b;
   width: fit-content;
   max-width: 800px;
@@ -507,6 +513,9 @@ a:active {
   max-width: min-content;
   height: -webkit-fill-available;
   background-color: white;
+  background-image: url(/res/loading.gif);
+  background-size: cover;
+  background-position: center;
   box-shadow: 1px 4px 12px #0000008c;
   border-radius: 0em;
   overflow: hidden;
