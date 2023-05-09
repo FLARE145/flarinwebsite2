@@ -219,7 +219,7 @@ a:active {
 
 .newsbar {
   display: block;
-  background: black;
+  background: red; /*black*/
   bottom: 0;
   left: 0;
   right: 0;
