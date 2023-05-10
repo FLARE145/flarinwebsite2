@@ -24,22 +24,26 @@ function openPopup(image) {
 	let newpage = document.getElementsByClassName("window")[0];
 	let cover = document.createElement("div");
 	let screenWidth = window.screen.width;
+	//opens link if on mobile
 	if (screenWidth <= 1000) {
-		//This will be used when artwork viewer is more ready
-		//window.location.href = "https://flare145.com/artwork?i=" + uri;
-		//window.open("https://flare145.com" + imageAdress, '_blank');
 		location.href = "https://flare145.com/artwork/" + uri;
 	} else {
+		//rest of stuff for pc
 		cover.classList.add("popup-background");
 		cover.setAttribute("onclick","closePopup();");
 		newpage.appendChild(cover);
 		let preview = document.createElement("div");
 		preview.classList.add("popup");
-		//This will be used when artwork viewer is more ready
-		//preview.innerHTML = '<a href="/artwork?i=' + uri + '"><img src="' + imageAdress + '"></a>';
+		//redirects to google hosted images if in the co category
+		if (uri.slice(0, 2) === 'co'){
+			console.log('painting!');
+			imageAdress = 'https://storage.googleapis.com/flare145.com/art-images/' + image;
+			preview.innerHTML = '<a href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
+			console.log(imageAdress);
+		} else {
 		preview.innerHTML = '<a href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
-		//preview.innerHTML = '<a href="' + imageAdress + '" target="_blank"><img src="' + imageAdress + '"></a>';
-		newpage.appendChild(preview);
+		};
+		newpage.appendChild(preview);;
 	}
 }
 
