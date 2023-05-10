@@ -31,8 +31,11 @@ function loadPosts(start) {
 			addElement(postList[i]);
 			postCount += 1;
 		};
+		//for the end
 		if (postCount >= names.postTitle.length){
 			document.getElementById("loadMore").remove();
+			document.getElementById("secretFooter").style.display = "block";
+			console.log("wao you made it all the way down. Cograst on finding the easter egg");
 		};
 		adActivate();
 		removeLoadGif();
