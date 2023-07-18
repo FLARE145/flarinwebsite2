@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/>
+	<link type="text/css" rel="stylesheet" id="dark-mode-general-link"/>
+	<style lang="en" type="text/css" id="dark-mode-custom-style"/>
+	<style lang="en" type="text/css" id="dark-mode-native-style"/>
+	<style lang="en" type="text/css" id="dark-mode-native-sheet"/>
+	<channel>
+		<title>FLARE145 - Blog</title>
+		<atom:link href="http://flare145.com/blog-feed.xml" rel="self" type="application/rss+xml"/>
+		<link>http://flare145.com</link>
+		<description>Official rss feed for FLARE145'S blog! Updates on new projects or random boring things.</description>
+		<language>en-us</language>
+		<image>
+			<url>http://flare145.com/res/blogicon128.png</url>
+			<title>FLARE145 - Blog</title>
+			<link>https://flare145.com/</link>
+			<width>128</width>
+			<height>128</height>
+		</image>
+		<item>
+			<title>Hello! This is a test</title>
+			<link>http://flare145.com</link>
+			<description>
+				<![CDATA[ Hey! I have no idea what I'm doing but here we are. ]]>
+			</description>
+		</item>
+	</channel>
+</rss>
