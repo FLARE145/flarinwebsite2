@@ -11,6 +11,16 @@
 		<description>This is a test rss feed</description>
 		<language>en-us</language>
 		<item>
+			<title>Bruh</title>
+			<pubDate>Mon, 17 jul 2023</pubDate>
+			<link>http://flare145.com</link>
+			<author>FLARE145</author>
+			<description>
+				<![CDATA[ <img src="https://storage.googleapis.com/flare145.com/boxkid-pages/test03.jpg" /><br /> Chapter 2
+				]]>
+			</description>
+		</item>
+		<item>
 			<title>FLARE145 goes to Chicago</title>
 			<pubDate>Mon, 17 jul 2023</pubDate>
 			<description>
