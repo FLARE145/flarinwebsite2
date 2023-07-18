@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/>
+	<link type="text/css" rel="stylesheet" id="dark-mode-general-link"/>
+	<style lang="en" type="text/css" id="dark-mode-custom-style"/>
+	<style lang="en" type="text/css" id="dark-mode-native-style"/>
+	<style lang="en" type="text/css" id="dark-mode-native-sheet"/>
+	<channel>
+		<title>test rss feed</title>
+		<atom:link href="http://flare145.com/test-feed.xml" rel="self" type="application/rss+xml"/>
+		<link>http://flare145.com</link>
+		<description>This is a test rss feed</description>
+		<language>en-us</language>
+		<item>
+			<title>Hello! This is a test</title>
+			<description>
+				<![CDATA[ Hey! I have no idea what I'm doing but here we are. ]]>
+			</description>
+		</item>
+	</channel>
+</rss>
