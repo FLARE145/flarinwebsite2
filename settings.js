@@ -103,8 +103,8 @@ if (readCookie('betaMode') === 'true') {
 	if (bgElement) {
         document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	};
-	//enable ads    btw no idea why this doesn't run anymore but it shouldn't so we good
-	if (document.getElementsByClassName('post')[0] != undefined){
+	//enable ads    i dont think we need this anymore?
+	/*if (document.getElementsByClassName('post')[0] != undefined){
 		console.log('yes');
 		let ad = document.createElement("div");
 		ad.classList.add("post");
@@ -112,7 +112,7 @@ if (readCookie('betaMode') === 'true') {
 		let secondPost = document.getElementsByClassName("post")[1];
 		parentDiv.insertBefore(ad, secondPost);
 		getAd();
-	};
+	};*/
 	//message
 	console.log('experimental mode is enabled')
 	} else {
