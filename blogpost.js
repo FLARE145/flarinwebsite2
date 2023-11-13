@@ -32,7 +32,7 @@ function adActivate(){
 		ad.classList.add("ad");
 		let parentDiv = document.getElementById("posts");
 		parentDiv.appendChild(ad);
-		let adNumber = Math.floor(Math.random()*2) + 1;
+		let adNumber = Math.floor(Math.random()*3) + 1;
 		fetch("ad" + adNumber + ".txt").then(function(response) {
 		response.text().then(function(text) {
 			ad = document.getElementsByClassName("ad")[0];

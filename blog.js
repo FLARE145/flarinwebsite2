@@ -49,7 +49,7 @@ function adActivate(){
 		let parentDiv = document.getElementById("posts");
 		let secondPost = document.getElementsByClassName("post")[postCount - 8];
 		parentDiv.insertBefore(ad, secondPost);
-		let adNumber = Math.floor(Math.random()*2) + 1;
+		let adNumber = Math.floor(Math.random()*3) + 1;
 		fetch("ad" + adNumber + ".txt").then(function(response) {
 		response.text().then(function(text) {
 			ad = document.getElementsByClassName("ad")[adCount];
