@@ -251,7 +251,8 @@ a:active {
 }
 
 .togglebutton {
-  background: url("/res/uparrow.svg") no-repeat;
+  background: url("/res/uparrowred.svg") no-repeat;
+  filter: saturate(0)brightness(0);
   background-size: 75%;
   background-position: center;
   background-color: ;
@@ -265,7 +266,7 @@ a:active {
 }
 
 .togglebutton:hover {
-  background: url("/res/uparrowred.svg") no-repeat;
+  filter: saturate(1);
   background-size: 75%;
   background-position: center;
   cursor: pointer;
@@ -388,49 +389,53 @@ a:active {
 }
 
 #linkstile {
-  background: url("/res/linksblack.png") no-repeat;
+  background: url("/res/linkstile.svg") no-repeat;
+  filter: saturate(0)brightness(0);
   background-size: contain;
   background-position: center;
 }
 
 #linkstile:hover {
-  background: url("/res/linksred.png") no-repeat;
+  filter: saturate(1);
   background-size: contain;
   background-position: center;
 }
 
 #blogtile {
-  background: url("/res/blogblack.png") no-repeat;
+  background: url("/res/blogtile.svg") no-repeat;
+  filter: saturate(0)brightness(0);
   background-size: contain;
   background-position: center;
 }
 
 #blogtile:hover {
-  background: url("/res/blogred.png") no-repeat;
+  filter: saturate(1);
   background-size: contain;
   background-position: center;
 }
 
 #arttile {
-  background: url("/res/artblack.png") no-repeat;
+  background: url("/res/arttile.svg") no-repeat;
+  filter: saturate(0)brightness(0);
   background-size: contain;
   background-position: center;
 }
 
 #arttile:hover {
-  background: url("/res/artred.png") no-repeat;
+  filter: saturate(1);
   background-size: contain;
   background-position: center;
 }
 
 #projectstile {
-  background: url("/res/projectsblack.png") no-repeat;
+  background: url("/res/projectstile.svg") no-repeat;
+  filter: saturate(0)brightness(0);
   background-size: contain;
   background-position: center;
 }
 
 #projectstile:hover {
-  background: url("/res/projectsred.png") no-repeat;
+  filter: saturate(1);
   background-size: contain;
   background-position: center;
 }
@@ -598,7 +603,8 @@ a:active {
 }
 
 .bttbutton {
-  background: url("/res/uparrow.svg") no-repeat;
+  background: url("/res/uparrowred.svg") no-repeat;
+  filter: saturate(0);
   background-size: 75%;
   background-position: center;
   background-color: white;
@@ -618,6 +624,7 @@ a:active {
 
 .bttbutton:hover {
   background: url("/res/uparrowred.svg") no-repeat;
+  filter: saturate(1);
   background-size: 75%;
   background-position: center;
   background-color: white;
