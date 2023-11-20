@@ -44,6 +44,11 @@ function openPopup(image) {
 		preview.innerHTML = '<a href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
 		};
 		newpage.appendChild(preview);;
+		//11/20/23 added x
+		let x = document.createElement("div");
+		x.classList.add("xButton");
+		x.setAttribute("onclick","closePopup();");
+		preview.appendChild(x);
 	}
 }
 
