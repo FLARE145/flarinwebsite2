@@ -742,25 +742,29 @@ a:active {
 
 @media only screen and (max-width: 1000px) {
 #linkstile {
-  background: url("/res/linksred.png") no-repeat;
+  background: url("/res/linkstile.svg") no-repeat;
+  filter: saturate(1)brightness(2);
   background-size: contain;
   background-position: center;
 }
 
 #blogtile {
-  background: url("/res/blogred.png") no-repeat;
+  background: url("/res/blogtile.svg") no-repeat;
+  filter: saturate(1)brightness(2);
   background-size: contain;
   background-position: center;
 }
 
 #arttile {
-  background: url("/res/artred.png") no-repeat;
+  background: url("/res/arttile.svg") no-repeat;
+  filter: saturate(1)brightness(2);
   background-size: contain;
   background-position: center;
 }
 
 #projectstile {
-  background: url("/res/projectsred.png") no-repeat;
+  background: url("/res/projectstile.svg") no-repeat;
+  filter: saturate(1)brightness(2);
   background-size: contain;
   background-position: center;
 }
