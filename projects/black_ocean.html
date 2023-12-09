@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <meta charset="UTF-8">
+	  <html lang="en">
+	  <title>CXN Black Ocean - Projects</title>
+	  <meta name="description" content="Projects from FLARE145">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/flarestyle.css">
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+	<div id="globalBackground">
+	</div>
+	<script src="../settings.js"></script>
+    <body>
+      <main id="main">
+	    <div class="topbar">
+		  <a href="https://flare145.com/">
+		    <img src="/res/flare145logoisolated.svg" alt="flare145 logo" class="logo">
+		  </a>
+		  <div class="toparrow"></div>
+		  <a href="https://flare145.com/projects">
+		    <div class="projectstitle"><span role="img" aria-label="projects"></span></div>
+		  </a>
+		</div>
+		<script type="application/ld+json">
+			{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			  "itemListElement": [{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "FLARE145",
+				"item": "https://flare145.com"
+			  },{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Projects",
+				"item": "https://flare145.com/projects"
+			  },{
+				"@type": "ListItem",
+				"position": 3,
+				"name": "CXN Black Ocean"
+			  }]
+			}
+		</script>
+		<div class="post">
+		  <h1 style="text-align: center;color: black;">Black Ocean</h1>
+		  <div class="flexZone"style="color:gray;margin:-15px;row-gap:0px;text-align:center;flex-direction:column;">
+			<p>Animated Intro</p>
+			<iframe class="yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/a6zT3_22bvs?si=XdzS4D3DI4fYR8Z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		  </div>
+		  <h2 style="text-align:left;color:black;">About this project</h2>
+		  <p>I had been working on stuff for CoaXioN when I suddenly had this cool idea for an animated intro. I think it was early October 2023. So it took about 2 months of working on and off to finish this. While it unfortunatly wont be used for game intros, I have been told it will be fit into something eventually.</p>
+		  <h2 style="text-align:left;color:black;">Process</h2>
+		  <p>The idea just came to me out of the blue, and I only went through with making this because I managed to capture the idea instantly with this concept art. If I wasn't somewhere where I could draw or doodle, the idea would have been lost forever.</p>
+		  <figure>
+		    <img src="/project-images/black_ocean_process1.png" alt="A sign in the middle of an ocean holding a paintbrush. it painted the coaxion logo onto itself" style="width:60vmin; display:inline; max-width:790px;">
+			<figcaption>The orginal concept drawing</figcaption>
+		  </figure>
+		  <p>My first goal was to recreate this concept exactly. This is an easy task because the setting is quite simple. The ocean might seem hard to make, but Blender's ocean modifier makes this a non-issue for me. The model for the sign is easy to make, so that mostly just leaves the sky. I had a cool idea for how to make a simple but effective cloud animation, so I'm going to write out a long section on how it works. No pictures so this will probably only make sense if you know Blender.</p>
+		  <p>I made a single plane with a noise texture to act as a base. A wave texture is used to fade out the edges closest to and furthest away from the camera. The side edges of the plane extend past the camera's view, so we don't need to worry about them. The noise texture actually has a fourth dimension we can animate refered to as W. Animating the W value causes the noise to change smoothly. Animating this in conjunction with the horizontal position of the texture creates a nice cloudy effect, however, it still lacks volume. I fixed this by adding an array modifier. It duplicates this plane and translates it up and away from the camera. With 133 total planes being rendered, it looks like real clouds now. If you ever use this technique yourself, be wary about animating the position towards or away from the camera. It might cause a strange jitter that you can only fix by animating the plane with it.</p>
+		  <p>The result is this test animation:</p>
+		  <figure>
+		    <img src="/project-images/black_ocean_process2.gif" alt="coaxion sign in an ocean waving around a paintbrush" style="width:60vmin; display:inline; max-width:790px;">
+			<figcaption>Early test animation</figcaption>
+		  </figure>
+		  <p>The motion for the hand was captured from my mouse as a way to test the ik rig. The real animation would not be animated with this method.</p>
+		  <p>You may have noticed that there are now warships(they are just more flat planes) in the background that were not originally there. This is because the project had now diverged from the original vision. Orginally, I wanted a mechanical shark character to make an appearance in this animation. You can see the top of their fin in the concept art. This character was my idea for an official mascot. I discussed the idea with MTD of Coaxion and we had differing ideas one how a mascot(s) would work. That coupled with the fact that there was no need or benefit to having one lead me to scrap the idea entirely. Regardless, here is a look at what could have been the mascot, the mechanical shark:</p>
+		  <figure>
+		    <img src="/project-images/black_ocean_process3.png" alt="a mechanical shark with legs and oil leaking from its mouth" style="width:45vmin; display:inline; max-width:790px;">
+			<figcaption>WIP model of the mechanical shark</figcaption>
+		  </figure>
+		  <p>The shark also would have been too much effort to animate because the water would need to react to its movements. The black liquid in it's mouth were drawn onto the model after being rendered. I call it black liquid because I'm not quite sure what it is. It's implied to be oil here, but the animation implies that it can be used as some sort of paint. The ocean might be entirely oil, entirely ink, or something else entirely. That's why I just refer to it as Black Ocean.</p>
+		  <p>When modeling the objects for the other arms, I expiremented with bringing more color into the scene. That's when this test render was created:</p>
+		  <figure>
+		    <img src="/project-images/black_ocean_process4.png" alt="the sign is holding a red paintbucket and paintbrush" style="width:60vmin; display:inline; max-width:790px;">
+			<figcaption>Pre-animation test render</figcaption>
+		  </figure>
+		  <p>The look was no doubt inspired by Death Stranding, as I had just played the game this year. I really liked it and decided that all of the objects would share the red color.</p>
+		  <p>While I'm saving plenty of extra details to talk about in a video version of this article, I'd like to mention that I chose to render this in eevee because I knew screenspace reflections would hide the arms when they retract behind the sign. There are a lot of decisions I made like that that I don't feel are necessary to talk about here, so stay tuned for when I start making my behind the scenes videos.</p>
+		  <p>Now for some closing details. The final comp was done in Davinci Resolve. It's mostly just a vhs filter that is included with the program, but I also did other tweaks to color and contrast. The audio is made of sounds I got from zapsplat and then put through a phone filter on audacity. I really wanted to give this video the look of something old that was barely recovered, or something like that.</p>
+		  <p>Thank you for reading this. This was a very fun project for me and it sparked my interest in 3d animation again. Follow coaxion because I'm likely to keep making more art and stuff for them.</p>
+		  <h2 style="text-align:left;color:black;">Related Links</h2>
+		  <div style="text-align:left;">
+			<p>&emsp;<a href="https://youtu.be/a6zT3_22bvs" target="_blank" rel="noopener">Animation on YouTube</a></p>
+			<p>&emsp;<a href="https://www.newgrounds.com/portal/view/909488" target="_blank" rel="noopener">Animation on Newgrounds</a></p>
+			<p>&emsp;<a href="https://coaxion.games/" target="_blank" rel="noopener">CoaXioN Website</a></p>
+		  </div>
+		</div>
+		<div style="height:10px;"></div>
+      </main>
+    </body>  
+  </html>
+
