@@ -377,6 +377,20 @@ a:active {
   background-size: contain;
 }
 
+.bluesky {
+  display: inline-block;
+  background: url("/res/blueskyblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.bluesky:hover {
+  background: url("/res/bluesky.png") no-repeat;
+  background-size: contain;
+}
+
 /* Tiles for main page */
 
 .frontTile {
@@ -819,6 +833,15 @@ a:active {
 .twitch {
   display: inline-block;
   background: url("/res/twitch.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 2em;
+}
+
+.bluesky {
+  display: inline-block;
+  background: url("/res/bluesky.png") no-repeat;
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
