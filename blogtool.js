@@ -44,7 +44,7 @@ function generateHeading(content) {
 	let day = new Date();
 	let year = day.getFullYear().toString().slice(2);
 	let fullDate = day.getMonth() + 1 + '/' + day.getDate() + '/' + year
-	return '<h2>' + content + '</h2>' + '\n' + '<p class="date">' + fullDate + '</p>' + '\n';
+	return '<a href="https:flare145.com/blogpost?=' + fixTitle() + '"rel="noopener"style="text-decoration:none;"><h2>' + content + '</h2></a>' + '\n' + '<p class="date">' + fullDate + '</p>' + '\n';
 }
 function generateImage(content) {
 	let source = content.getElementsByClassName("imageSource")[0].value;
