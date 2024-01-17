@@ -34,15 +34,10 @@ function openPopup(image) {
 		newpage.appendChild(cover);
 		let preview = document.createElement("div");
 		preview.classList.add("popup");
-		//redirects to google hosted images if in the co category
-		if (uri.slice(0, 2) === 'co'){
-			console.log('painting!');
-			imageAdress = 'https://storage.googleapis.com/flare145.com/art-images/' + image;
-			preview.innerHTML = '<a href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
-			console.log(imageAdress);
-		} else {
+		//redirects to google hosted images
+		imageAdress = 'https://storage.googleapis.com/flare145.com/art-images/' + image;
 		preview.innerHTML = '<a href="/artwork/' + uri + '"><img src="' + imageAdress + '"></a>';
-		};
+		console.log(imageAdress);
 		newpage.appendChild(preview);;
 		//11/20/23 added x
 		let x = document.createElement("div");
