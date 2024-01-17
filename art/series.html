@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <meta charset="UTF-8">
+	  <html lang="en">
+	  <title>FLARE145 - Art</title>
+	  <meta name="description" content="Artwork from FLARE145">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/flarestyle.css">
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	  <link rel="preload" href="/res/loading.gif" as="image">
+    </head>
+	<div id="globalBackground">
+	</div>
+	<script src="/settings.js"></script>
+	<div class="window">
+	</div>
+    <body>
+      <main id="main">
+	    <div class="topbar">
+		  <a href="https://flare145.com/">
+		    <img src="/res/flare145logoisolated.svg" alt="flare145 logo" class="logo">
+		  </a>
+		  <div class="toparrow"></div>
+		  <a href="https://flare145.com/art">
+		    <div class="arttitle"><span role="img" aria-label="art"></span></div>
+		  </a>
+		</div>
+		<script type="application/ld+json">
+			{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			  "itemListElement": [{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "FLARE145",
+				"item": "https://flare145.com"
+			  },{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Art",
+				"item": "https://flare145.com/art"
+			  },{
+				"@type": "ListItem",
+				"position": 3,
+				"name": "Series",
+				"item": "https://flare145.com/art/series"
+			  }]
+			}
+		</script>
+		<div style="text-align:center;margin-top:-30px;">
+		  <a style="font-size:30px;display:inline-block;text-decoration:none;" href="https://flare145.com/art"><p style="font-size:30px;">Featured</p></a>
+		  <p style="font-size:30px;display:inline-block;"> | </p>
+		  <p style="font-size:30px;color:grey;display:inline-block;">Series</p>
+		  <p style="font-size:30px;display:inline-block;"> | </p>
+		  <a style="font-size:30px;display:inline-block;text-decoration:none;" href="https://flare145.com/art/all"><p style="font-size:30px;">All</p></a>
+		</div>
+		<div style="display:flex;justify-content:center;gap:10px;margin-bottom:20px; ">
+			<select id="select">
+				<option value="none"></option>
+				<option value="ap2019">AP 2019</option>
+				<option value="abstract">Abstract</option>
+			</select>
+			<div class="searchButton" onclick="search()"><p style="margin:0">view</p></div>
+		</div>
+		<div class="flexZone" style="float:left;">
+		</div>
+		<script src="series.js"></script>
+      </main>
+    </body>  
+  </html>
