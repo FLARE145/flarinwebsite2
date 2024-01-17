@@ -11,6 +11,10 @@ function search(){
 			summon('abstract.html');
 			setParam('abstract');
 			break;
+		case 'funfridayendstills':
+			summon('funfridayendstills.html');
+			setParam('funfridayendstills');
+			break;
 		default:
 			document.getElementsByClassName("flexZone")[0].innerHTML = '';
 			setParam('');
