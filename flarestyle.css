@@ -491,10 +491,28 @@ a:active {
   overflow: hidden;
   cursor: pointer;
 }
+.imageHolderSmall {
+  background-color: white;
+  background-image: url(/res/loading.gif);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 4px 12px #5858586b;
+  height: fit-content;
+  border-radius: .45em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
 
 .imageInHolder {
   flex-shrink: 0;
   height: 350px;
+}
+.imageInHolderSmall {
+  flex-shrink: 0;
+  height: 200px;
 }
 
 .bigImageHolder {
