@@ -15,6 +15,10 @@ function search(){
 			summon('funfridayendstills.html');
 			setParam('funfridayendstills');
 			break;
+		case 'rorschach':
+			summon('rorschach.html');
+			setParam('rorschach');
+			break;
 		default:
 			document.getElementsByClassName("flexZone")[0].innerHTML = '';
 			setParam('');
