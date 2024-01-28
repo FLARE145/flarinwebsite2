@@ -695,13 +695,13 @@ a:active {
   border-radius: .5em;
   box-shadow: 1px 4px 12px #5858586b;
   font-size: 20px;
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   text-align: center;
   padding-top: 9px;
 }
 
 #loadMore:hover {
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   color: red;
   cursor: pointer;
 }
@@ -932,7 +932,7 @@ a:active {
   border-radius: .5em;
   box-shadow: 1px 4px 12px #5858586b;
   font-size: 20px;
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   text-align: center;
   padding-top: 9px;
   color: red;
