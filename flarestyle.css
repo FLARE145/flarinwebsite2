@@ -51,7 +51,7 @@ body {
 }
 
 p{
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
 
@@ -63,7 +63,7 @@ p{
 }
 
 h1 {
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-size: 40px;
   color: red;
 }
@@ -91,32 +91,32 @@ em{
 }
 
 figcaption{
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-style: italic;
   color: #333333;
 }
 
 a:link {
   color:#484848;
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
 
 a:visited {
   color:#484848;
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
 
 a:hover {
   color:red;
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
 
 a:active {
   color:red;
-  font-family: "Franklin Gothic Light";
+  font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
 
