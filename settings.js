@@ -119,6 +119,10 @@ if (readCookie('betaMode') === 'true') {
 		console.log('press s for secret settings');
 };
 
+//darkmode
+if (readCookie('darkTheme') === 'true') {
+	document.getElementsByTagName('body')[0].classList.add("darkTheme");
+};
 
 //scroolll
 

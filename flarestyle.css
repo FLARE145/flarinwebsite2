@@ -1,5 +1,34 @@
+:root{
+	--bgColor:#FCFCFC;
+	--logoFilter:contrast(1)brightness(1);
+	--arrowFilter:brightness(1)contrast(1);
+	--postColor: white;
+	--pColor: ;
+	--pShadow: 1px 4px 12px #5858586b;
+	--h2Color: red;
+	--aColor: #484848;
+	--bttButtonShadow: 2px 6px 12px #8d8d8d54;
+	--bttButtonBorderColor: #e6e6e6;
+	--frontTileFilter: saturate(0)brightness(0);
+	--frontTileFilterHover: saturate(1)brightness(1);
+}
+.darkTheme{
+	--bgColor:#181818;
+	--logoFilter:contrast(0)brightness(10);
+	--arrowFilter:brightness(0)contrast(.1);
+	--postColor:#252525;
+	--pColor:#c3c3c3;
+	--pShadow: 1px 4px 12px #000000a1;
+	--h2Color: white;
+	--aColor: white;
+	--bttButtonShadow: 1px 4px 12px #000000a1;
+	--bttButtonBorderColor: #3d3d3d;
+	--frontTileFilter: brightness(0)contrast(0.1)saturate(0);
+	--frontTileFilterHover: brightness(10)contrast(0.1)saturate(50);
+}
+
 body {
-  background-color: #FCFCFC;
+  background-color: var(--bgColor);
   overflow:overlay;
 }
 
@@ -53,6 +82,7 @@ body {
 p{
   font-family: "Franklin Gothic Medium";
   font-size: 20px;
+  color: var(--pColor);
 }
 
 .date {
@@ -71,7 +101,7 @@ h1 {
 h2 {
   font-family: "Franklin Gothic Medium";
   font-size: 30px;
-  color: red;
+  color: var(--h2Color);
 }
 h3{
   font-family: "Franklin Gothic Medium";
@@ -102,13 +132,13 @@ figcaption{
 }
 
 a:link {
-  color:#484848;
+  color: var(--aColor);
   font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
 
 a:visited {
-  color:#484848;
+  color: var(--aColor);
   font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
@@ -140,6 +170,7 @@ a:active {
   left: 3vmin;
   width: 39vmin;
   height: 10vmin; 
+  filter: var(--logoFilter);
   /*padding: 8px;*/
 }
 
@@ -164,6 +195,7 @@ a:active {
   left:40vmin;
   width:5vmin;
   height:5vmin;
+  filter: var(--arrowFilter);
 }
 
 .arttitle {
@@ -178,6 +210,7 @@ a:active {
   left:46vmin;
   height:5vmin;
   width:12vmin;
+  filter: var(--arrowFilter);
 }
 
 .blogtitle {
@@ -192,6 +225,7 @@ a:active {
   left:46vmin;
   height:5vmin;
   width:19vmin;
+  filter: var(--arrowFilter);
 }
 
 .linkstitle {
@@ -206,6 +240,7 @@ a:active {
   left:46vmin;
   height:5vmin;
   width:19vmin;
+  filter: var(--arrowFilter);
 }
 
 .projectstitle {
@@ -220,6 +255,7 @@ a:active {
   left:46vmin;
   height:5vmin;
   width:32vmin;
+  filter: var(--arrowFilter);
 }
 
 .newsbar {
@@ -409,52 +445,52 @@ a:active {
 
 #linkstile {
   background: url("/res/linkstile.svg") no-repeat;
-  filter: saturate(0)brightness(0);
+  filter: var(--frontTileFilter);
   background-size: contain;
   background-position: center;
 }
 
 #linkstile:hover {
-  filter: saturate(1);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
 
 #blogtile {
   background: url("/res/blogtile.svg") no-repeat;
-  filter: saturate(0)brightness(0);
+  filter: var(--frontTileFilter);
   background-size: contain;
   background-position: center;
 }
 
 #blogtile:hover {
-  filter: saturate(1);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
 
 #arttile {
   background: url("/res/arttile.svg") no-repeat;
-  filter: saturate(0)brightness(0);
+  filter: var(--frontTileFilter);
   background-size: contain;
   background-position: center;
 }
 
 #arttile:hover {
-  filter: saturate(1);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
 
 #projectstile {
   background: url("/res/projectstile.svg") no-repeat;
-  filter: saturate(0)brightness(0);
+  filter: var(--frontTileFilter);
   background-size: contain;
   background-position: center;
 }
 
 #projectstile:hover {
-  filter: saturate(1);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
@@ -610,17 +646,17 @@ a:active {
 	display: flex;
 	width: 70px;
 	height: 35px;
-	background-color: white;
+	background-color: var(--postColor);
 	justify-content: center;
 	align-items: center;
 	border-style: solid;
-	border-color: #e6e6e6;
+	border-color: var(--bttButtonBorderColor);
 	border-width: 2px;
 	border-radius: 3px;
 }
 
 .searchButton:hover{
-	color:red;
+	color: red !important;
 	cursor: pointer;
 }
 
@@ -628,9 +664,9 @@ a:active {
 
 .post {
   display: block;
-  background-color: white;
+  background-color: var(--postColor);
   /*box-shadow: 1px 4px 6px #e2e2e2;*/
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--pShadow);
   width: 843px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -662,12 +698,12 @@ a:active {
   filter: saturate(0);
   background-size: 75%;
   background-position: center;
-  background-color: white;
+  background-color: var(--postColor);
   border-radius: 25%;
-  border-color: #e6e6e6;
+  border-color: var(--bttButtonBorderColor);
   border-style: solid;
   border-width: 2px;
-  box-shadow: 2px 6px 12px #8d8d8d54;
+  box-shadow: var(--bttButtonColor);
   display: block;
   z-index: 99;
   position: fixed;
@@ -682,9 +718,9 @@ a:active {
   filter: saturate(1);
   background-size: 75%;
   background-position: center;
-  background-color: white;
+  background-color: var(--postColor);
   border-radius: 25%;
-  border-color: #e6e6e6;
+  border-color: var(--bttButtonBorderColor);
   border-style: solid;
   border-width: 2px;
 }
@@ -696,9 +732,10 @@ a:active {
   margin-bottom: 0px;
   width: 125px;
   height: 35px;
-  background-color: white;
+  background-color: var(--postColor);
+  color: var(--pColor);
   border-radius: .5em;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--bttButtonShadow);
   font-size: 20px;
   font-family: "Franklin Gothic Medium";
   text-align: center;
@@ -744,11 +781,11 @@ a:active {
 
 .projectGroup{
   width: 907px;
-  background-color: white;
+  background-color: var(--postColor);
   padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--postShadow);
 }
 
 .projectHeader{
@@ -1003,6 +1040,4 @@ a:active {
 .yt{
   width:300px;
   height:169px;
-}
-
 }
