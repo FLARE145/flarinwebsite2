@@ -11,7 +11,7 @@ function addElement(type) {
 		case 'heading':
 		    let hElem = document.createElement("div");
 			hElem.id = eCount;
-			hElem.classList.add("paragraph");
+			hElem.classList.add("smallHeading");
 			hElem.innerHTML = '  <h4>Heading</h4>' + '\n' + '  <textarea name="headingBox" class="here" rows="1" cols="40"></textarea>';
 			document.getElementById("paragraphs").appendChild(hElem);
 			break;
@@ -35,7 +35,9 @@ function addElement(type) {
 function deleteElement() {
 	let eCount = countElements();
 	let elem = document.getElementById(eCount-1)
-	elem.remove();
+	if (eCount > 1){
+		elem.remove();
+	};
 }
 function generateParagraph(content) {
 	return '<p>' + content + '</p>' + '\n';
@@ -45,6 +47,9 @@ function generateHeading(content) {
 	let year = day.getFullYear().toString().slice(2);
 	let fullDate = day.getMonth() + 1 + '/' + day.getDate() + '/' + year
 	return '<a href="https://flare145.com/blogpost?=' + fixTitle() + '"rel="noopener"style="text-decoration:none;"><h2>' + content + '</h2></a>' + '\n' + '<p class="date">' + fullDate + '</p>' + '\n';
+}
+function generateSmallHeading(content) {
+	return '<h3>' + content + '</h3>' + '\n';
 }
 function generateImage(content) {
 	let source = content.getElementsByClassName("imageSource")[0].value;
@@ -88,10 +93,16 @@ function generateFileName() {
 function copyName(){
 	navigator.clipboard.writeText(document.getElementById("outputFileName").value);
 }
+function copyAnchor(){
+	navigator.clipboard.writeText('<a href="" rel="nopener" target="_blank"></a>');
+}
 function generateElement(element) {
 	switch(element.className) {
 		case 'heading':
 		    return generateHeading(element.getElementsByClassName("here")[0].value)
+		    break;
+		case 'smallHeading':
+		    return generateSmallHeading(element.getElementsByClassName("here")[0].value)
 		    break;
 		case 'paragraph':
 		    return generateParagraph(element.getElementsByClassName("here")[0].value)
