@@ -25,23 +25,6 @@ function clearCookies() {
 	}
 }
 
-//misc
-
-function copyToClipboard(text, id) {
-	navigator.clipboard.writeText(text);
-	ogText = document.getElementById(id).innerHTML;
-	document.getElementById(id).innerHTML = 'Link copied to clipboard';
-	document.getElementById(id).style.color = 'red';
-	ogClick = document.getElementById(id).onclick;
-	document.getElementById(id).onclick = '';
-	setTimeout(() => {
-			document.getElementById(id).style.color = '';
-			document.getElementById(id).innerHTML = ogText;
-			document.getElementById(id).onclick = ogClick;
-		}, 2500);
-}
-
-
 //settings shortcut
 
 document.addEventListener("keypress", function(event) {
@@ -57,30 +40,6 @@ if (readCookie('visited') === 'true') {
 		writeCookie('visited', true);
 		console.log('this is your first visit!');
 };
-
-//newsbar stuff
-
-function toggleElement(){
-	if (document.getElementsByClassName("newsbar")[0]){
-	let element = document.getElementsByClassName("newsbar")[0];
-	if (element.style.display === "none") {
-		element.style.display = "grid";
-		document.getElementsByClassName("togglebutton")[0].style.bottom = "29px";
-		document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(180deg)";
-		writeCookie('news', true);
-    } else {
-    element.style.display = "none";
-	document.getElementsByClassName("togglebutton")[0].style.bottom = "0px";
-	document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(0deg)";
-	deleteCookie('news');
-    }
-	}
-}
-
-if (readCookie('news') === 'true') {
-	toggleElement();
-}
-
 
 //ad
 
@@ -116,68 +75,8 @@ if (readCookie('betaMode') === 'true') {
 	} else if (bgElement) {
 		document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	};
-	//enable ads    i dont think we need this anymore?
-	/*if (document.getElementsByClassName('post')[0] != undefined){
-		console.log('yes');
-		let ad = document.createElement("div");
-		ad.classList.add("post");
-		let parentDiv = document.getElementById("main");
-		let secondPost = document.getElementsByClassName("post")[1];
-		parentDiv.insertBefore(ad, secondPost);
-		getAd();
-	};*/
 	//message
 	console.log('experimental mode is enabled')
 	} else {
 		console.log('press s for secret settings');
 };
-
-//scroolll
-
-
-
-let pos = window.innerWidth*.25;
-//let pos2 = window.innerWidth;
-
-
-function scrollElement(){
-	let element = document.getElementById('scrollText');
-	let width = element.offsetWidth;
-	pos -= .25;
-	//let elementF = document.getElementById('fetchText');
-	//let widthF = elementF.offsetWidth;
-	endpoint = pos + width;
-	//pos2 = endpoint + window.innerWidth/2;
-	let posString = pos + "px";
-	//let posString2 = pos2 + "px";
-	element.style.marginLeft = posString;
-	//elementF.style.marginLeft = posString2;
-	if (pos < 0-width){
-		pos = window.innerWidth;
-		updateNews();
-	}
-	/*if (pos2 < 0-widthF){
-		pos2 = window.innerWidth;
-	}*/
-}
-
-window.onload = function(){
-	if (document.getElementsByClassName('newsbar')[0]){
-	updateNews();
-	setInterval(scrollElement,5);
-	}
-};
-
-function createNews(){
-	let text = document.createElement("p");
-	text.setAttribute("id","scrollText");
-	document.getElementsByClassName("newsbar")[0].appendChild(text);
-}
-
-function updateNews(){
-	fetch("news.txt").then(function(response) {
-	  response.text().then(function(text) {
-		document.getElementById("scrollText").innerHTML = 'Announcements:  ' + text.repeat(5) + 'Announcements will return momentarily';
-		});
-	});
-}

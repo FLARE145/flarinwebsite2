@@ -46,6 +46,7 @@
 	<div id="globalBackground">
 	</div>
     <body class="custom-scrollbar">
+	<script src="settings.js"></script>
       <main>
 	  <div class="topcover">
 		<div class="topbar" style="margin:0px;">
@@ -95,22 +96,63 @@
 				<p style="max-width:600px;">I am an artist and website developer for <a href="https://coaxion.games/" rel="noopener" target="_blank">CoaXioN</a>. CoaXioN is a collective of amateur hobbyists developing games and mods for games.</p>
 				<p style="max-width:600px;">I have worked on two animations with <a href="https://www.dialupstudios.com/" rel="noopener" target="_blank">Dial-Up Studios</a>. Dial-Up Studios is a global art collaboration community with the goal of reimagining beloved pop culture films released during the 'golden era' of dialup internet (1992 - 2004).</p>
 			  </div>
-			  <!--<div style="width:180px;height:1px;display:inline-block;margin:8px;padding:20px;padding-bottom:0px;margin-top:0px;"></div>
-			  <div style="display:inline-block;padding:20px;margin-left:auto;margin-right:auto;">
-				<h1>More about the website</h1>
-				<p style="max-width:800px">Uhhhhh so I figure I should explain some stuff about the website. This serves as the access point between all of my creative endeavors. There really isn't much here, so I'd recommend just  clicking around if you are curious.</p>
-			  </div>
-			  <div style="display:block;padding:20px;margin-left:auto;margin-right:auto;max-width:900px;">
-				<h2>News section</h2>
-				<p style="max-width:400px">If you click the small arrow in the screen above, it will display a little news broadcast. The website will remember whether you left it toggled on or off. Its pretty cool.</p>
-			  </div>
-			  <div style="display:block;padding:20px;margin-left:auto;margin-right:auto;max-width:900px;">
-				<h2>Secret settings</h2>
-				<p style="max-width:400px">I update this website with new features, but they don't always work as intended. That's why I created experimental mode. You can access the <a href="https://flare145.com/settings">secret settings page</a> by pressing the s key. You can opt into the beta mode there.</p>
-			  </div>--->
 			  </div>
 			</div>
-	    <script src="settings.js"></script>
+		<script>
+			//newsbar stuff
+			function toggleElement(){
+				if (document.getElementsByClassName("newsbar")[0]){
+				let element = document.getElementsByClassName("newsbar")[0];
+				if (element.style.display === "none") {
+					element.style.display = "grid";
+					document.getElementsByClassName("togglebutton")[0].style.bottom = "29px";
+					document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(180deg)";
+					writeCookie('news', true);
+				} else {
+				element.style.display = "none";
+				document.getElementsByClassName("togglebutton")[0].style.bottom = "0px";
+				document.getElementsByClassName("togglebutton")[0].style.transform = "rotate(0deg)";
+				deleteCookie('news');
+				}
+				}
+			}
+			if (readCookie('news') === 'true') {
+				toggleElement();
+			}
+			//scroolll
+			let pos = window.innerWidth*.25;
+			//let pos2 = window.innerWidth;
+			function scrollElement(){
+				let element = document.getElementById('scrollText');
+				let width = element.offsetWidth;
+				pos -= .25;
+				endpoint = pos + width;
+				let posString = pos + "px";
+				element.style.marginLeft = posString;
+				if (pos < 0-width){
+					pos = window.innerWidth;
+					updateNews();
+				}
+			}
+			window.onload = function(){
+				if (document.getElementsByClassName('newsbar')[0]){
+				updateNews();
+				setInterval(scrollElement,5);
+				}
+			};
+			function createNews(){
+				let text = document.createElement("p");
+				text.setAttribute("id","scrollText");
+				document.getElementsByClassName("newsbar")[0].appendChild(text);
+			}
+			function updateNews(){
+				fetch("news.txt").then(function(response) {
+				  response.text().then(function(text) {
+					document.getElementById("scrollText").innerHTML = 'Announcements:  ' + text.repeat(5) + 'Announcements will return momentarily';
+					});
+				});
+			}
+		</script>
       </main>
     </body>  
   </html>
