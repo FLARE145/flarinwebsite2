@@ -534,7 +534,7 @@ a:active {
   background-image: url(/res/loading.gif);
   background-size: cover;
   background-position: center;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--pShadow);
   height: fit-content;
   border-radius: .8em;
   display: flex;
@@ -548,7 +548,7 @@ a:active {
   background-image: url(/res/loading.gif);
   background-size: cover;
   background-position: center;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--pShadow);
   height: fit-content;
   border-radius: .45em;
   display: flex;
@@ -846,28 +846,28 @@ a:active {
 @media only screen and (max-width: 1000px) {
 #linkstile {
   background: url("/res/linkstile.svg") no-repeat;
-  filter: saturate(1)brightness(2);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
 
 #blogtile {
   background: url("/res/blogtile.svg") no-repeat;
-  filter: saturate(1)brightness(2);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
 
 #arttile {
   background: url("/res/arttile.svg") no-repeat;
-  filter: saturate(1)brightness(2);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
 
 #projectstile {
   background: url("/res/projectstile.svg") no-repeat;
-  filter: saturate(1)brightness(2);
+  filter: var(--frontTileFilterHover);
   background-size: contain;
   background-position: center;
 }
