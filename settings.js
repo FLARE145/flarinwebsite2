@@ -97,15 +97,24 @@ function getAd(){
 
 //activate changes
 
+//darkmode
+let darkMode = false;
+if (readCookie('darkTheme') === 'true') {
+	document.getElementsByTagName('body')[0].classList.add("darkTheme");
+	darkMode = true;
+	} else {
+		document.getElementsByTagName('body')[0].classList.add("lightTheme");
+	};
+
 if (readCookie('betaMode') === 'true') {
 	//background change
 	let bgElement = document.getElementById("globalBackground")
-	if (readCookie('darkTheme') === 'true') {
+	if (darkMode === true) {
 		if (bgElement) {
-        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg5.webm' type='video/webm'></video>";
+        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg'><source src='/res/flarebg5.webm' type='video/webm'></video>";
 		};
 	} else if (bgElement) {
-		document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+		document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	};
 	//enable ads    i dont think we need this anymore?
 	/*if (document.getElementsByClassName('post')[0] != undefined){
@@ -121,11 +130,6 @@ if (readCookie('betaMode') === 'true') {
 	console.log('experimental mode is enabled')
 	} else {
 		console.log('press s for secret settings');
-};
-
-//darkmode
-if (readCookie('darkTheme') === 'true') {
-	document.getElementsByTagName('body')[0].classList.add("darkTheme");
 };
 
 //scroolll
