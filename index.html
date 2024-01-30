@@ -66,6 +66,9 @@
 		</div> -->
 		<div class="togglebutton" onclick="toggleElement()">
 		</div>
+		<div class="settingsButton" onclick="openSettings()" style="bottom:10px;">
+			<p>Settings</p>
+		</div>
 		<div class="newsbar" style="display:none;" unselectable="on">
 		  <p id='scrollText'></p>
 		  <!--<p id='fetchText'>Fetching News. Please wait...</p>--->
@@ -115,7 +118,13 @@
 				deleteCookie('news');
 				}
 				}
-			}
+				//moves settings button
+				if (document.getElementsByClassName('settingsButton')[0].style.bottom === '10px'){
+					document.getElementsByClassName('settingsButton')[0].style.bottom = '39px';
+				} else {
+					document.getElementsByClassName('settingsButton')[0].style.bottom = '10px'
+				};
+			};
 			if (readCookie('news') === 'true') {
 				toggleElement();
 			}
@@ -152,6 +161,61 @@
 					});
 				});
 			}
+			//settingsButton
+			function openSettings(){
+				document.getElementsByClassName('settingsButton')[0].style.display = 'none';
+				body = document.getElementsByClassName('tilearray')[0];
+				page = document.createElement('div');
+				page.classList.add('settingsPage');
+				page.innerHTML = '<div style="display:flex;flex-direction:column;gap:5px;"><div class="settingsPageX" onclick="closeSettings()"></div><div style="display:flex;align-items:center;gap:4px;"><label class="switch"><input type="checkbox" id="themeCheck" onclick="toggleDarkTheme()"><span class="slider"></span></label><p style="margin:0px;">Enable Dark Mode</p></div><div style="display:flex;align-items:center;gap:4px;"><label class="switch"><input type="checkbox" id="motionCheck" onclick="toggleMotion()"><span class="slider"></span></label><p style="margin:0px;">Enable Fancy Background</p></div></div>';
+				body.appendChild(page);
+				if (readCookie('darkTheme') === 'true'){
+					document.getElementById('themeCheck').checked = true;
+				};
+				if (readCookie('motionBackground') === 'true'){
+					document.getElementById('motionCheck').checked = true;
+				};
+				if (readCookie('news') === 'true'){
+					document.getElementsByClassName('settingsPage')[0].style.bottom = '39px';
+				};
+			};
+			function closeSettings(){
+				document.getElementsByClassName('settingsPage')[0].remove();
+				document.getElementsByClassName('settingsButton')[0].style.display = 'flex';
+			};
+			function toggleDarkTheme(){
+				if (readCookie('darkTheme') === 'true'){
+					deleteCookie('darkTheme');
+					document.getElementsByTagName('body')[0].classList.remove('darkTheme');
+					document.getElementsByTagName('body')[0].classList.add('lightTheme');
+					if (readCookie('motionBackground') === 'true'){
+						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+					};
+				} else {
+					writeCookie('darkTheme', 'true');
+					document.getElementsByTagName('body')[0].classList.remove('lightTheme');
+					document.getElementsByTagName('body')[0].classList.add('darkTheme');
+					if (readCookie('motionBackground') === 'true'){
+						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg'><source src='/res/flarebg5.webm' type='video/webm'></video>";
+					};
+				};
+			};
+			function toggleMotion(){
+				if (readCookie('motionBackground') === 'true'){
+					deleteCookie('motionBackground');
+					document.getElementById("globalBackground").innerHTML = '';
+				} else {
+					let bgElement = document.getElementById("globalBackground");
+					if (readCookie('darkTheme') === 'true') {
+						if (bgElement) {
+						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg'><source src='/res/flarebg5.webm' type='video/webm'></video>";
+						};
+					} else if (bgElement) {
+						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+					};
+					writeCookie('motionBackground', 'true');
+				};
+			};
 		</script>
       </main>
     </body>  

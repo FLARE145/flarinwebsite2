@@ -64,8 +64,9 @@ if (readCookie('darkTheme') === 'true') {
 	} else {
 		document.getElementsByTagName('body')[0].classList.add("lightTheme");
 	};
-
-if (readCookie('betaMode') === 'true') {
+	
+//motion background
+if (readCookie('motionBackground') === 'true') {
 	//background change
 	let bgElement = document.getElementById("globalBackground")
 	if (darkMode === true) {
@@ -76,7 +77,5 @@ if (readCookie('betaMode') === 'true') {
 		document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	};
 	//message
-	console.log('experimental mode is enabled')
-	} else {
-		console.log('press s for secret settings');
+	console.log('fancy mode is enabled')
 };

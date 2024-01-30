@@ -12,21 +12,21 @@ function addElement(type) {
 		    let hElem = document.createElement("div");
 			hElem.id = eCount;
 			hElem.classList.add("smallHeading");
-			hElem.innerHTML = '  <h4>Heading</h4>' + '\n' + '  <textarea name="headingBox" class="here" rows="1" cols="40"></textarea>';
+			hElem.innerHTML = '  <h4 style="color:var(--pColor);">Heading</h4>' + '\n' + '  <textarea name="headingBox" class="here" rows="1" cols="40"></textarea>';
 			document.getElementById("paragraphs").appendChild(hElem);
 			break;
 		case 'paragraph':
 			let pElem = document.createElement("div");
 			pElem.id = eCount;
 			pElem.classList.add("paragraph");
-			pElem.innerHTML = '  <h4>Paragraph</h4>' + '\n' + '  <textarea name="paragraphBox" class="here" rows="8" cols="75"></textarea>';
+			pElem.innerHTML = '  <h4 style="color:var(--pColor);">Paragraph</h4>' + '\n' + '  <textarea name="paragraphBox" class="here" rows="8" cols="75"></textarea>';
 			document.getElementById("paragraphs").appendChild(pElem);
 			break;
 		case 'image':
 		    let iElem = document.createElement("div");
 			iElem.id = eCount;
 			iElem.classList.add("image");
-			iElem.innerHTML = '  <h4>Image</h4>' + '\n' + '  <label for="sourceBox">Image source</label><br>' + '\n' + '  <textarea name="sourceBox" class= "imageSource" rows="1" cols="40"></textarea><br>' + '\n' + '  <label for="captionBox">Caption</label><br>' + '\n' + '  <textarea name="captionBox" class="imageCaption" rows="3" cols="40"></textarea><br>' + '\n' + '  <label for="labelBox">Alt text</label><br>' + '\n' + '  <textarea name="altBox" class="imageAlt" cols="40"></textarea><br>' + '\n' + '<label for="sizeBox">Size</label><br>' + '\n' + '  <input type="radio" class="skinny" name="size" value="45"><label for="skinny">Skinny</label><br>' + '\n' + '  <input type="radio" class="wide" name="size" value="60"><label for="wide">Wide</label><br>';
+			iElem.innerHTML = '  <h4 style="color:var(--pColor);">Image</h4>' + '\n' + '  <label for="sourceBox"style="color:var(--pColor);">Image source</label><br>' + '\n' + '  <textarea name="sourceBox" class= "imageSource" rows="1" cols="40"></textarea><br>' + '\n' + '  <label for="captionBox"style="color:var(--pColor);">Caption</label><br>' + '\n' + '  <textarea name="captionBox" class="imageCaption" rows="3" cols="40"></textarea><br>' + '\n' + '  <label for="labelBox"style="color:var(--pColor);">Alt text</label><br>' + '\n' + '  <textarea name="altBox" class="imageAlt" cols="40"></textarea><br>' + '\n' + '<label for="sizeBox"style="color:var(--pColor);">Size</label><br>' + '\n' + '  <input type="radio" class="skinny" name="size" value="45"><label for="skinny"style="color:var(--pColor);">Skinny</label><br>' + '\n' + '  <input type="radio" class="wide" name="size" value="60"><label for="wide"style="color:var(--pColor);">Wide</label><br>';
 			document.getElementById("paragraphs").appendChild(iElem);
 			break;
 		default: console.log('unknown element type');
@@ -139,14 +139,4 @@ function readCookie(name) {
 	    let cookieValue = allCookies.find(row => row.startsWith(name)).split('=')[1];
 	    return cookieValue;
 	}
-}
-
-if (readCookie('betaMode') === 'true') {
-	let bgElement = document.getElementById("globalBackground")
-	if (bgElement) {
-        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
-	}
-	console.log('experimental mode is enabled')
-} else {
-	console.log('press s for secret settings');
 }
