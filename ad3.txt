@@ -1,2 +1,2 @@
-<h2 style="color:black;">Advertisement</h2>
+<h2>Advertisement</h2>
 <a href="https://coaxion.games/" target="_blank" rel="noopener"><img src="/res/coaxad.jpg" alt="ad" style="width:100%;margin-bottom:12px;"></a>

@@ -5,8 +5,11 @@
 	--postColor: white;
 	--pColor: ;
 	--pShadow: 1px 4px 12px #5858586b;
-	--h2Color: red;
+	--h1Color: black;
+	--redHeading: red;
+	--h2Color: black;
 	--aColor: #484848;
+	--figcaptionColor: #333333;
 	--bttButtonShadow: 2px 6px 12px #8d8d8d54;
 	--bttButtonBorderColor: #e6e6e6;
 	--frontTileFilter: saturate(0)brightness(0);
@@ -14,17 +17,20 @@
 }
 .darkTheme{
 	--bgColor:#181818;
-	--logoFilter:contrast(0)brightness(10);
+	--logoFilter:invert(1)hue-rotate(180deg)saturate(10);
 	--arrowFilter:brightness(0)contrast(.1);
 	--postColor:#252525;
 	--pColor:#c3c3c3;
 	--pShadow: 1px 4px 12px #000000a1;
+	--h1Color: white;
+	--redHeading: #ff4423;
 	--h2Color: white;
 	--aColor: white;
+	--figcaptionColor: #818181;
 	--bttButtonShadow: 1px 4px 12px #000000a1;
 	--bttButtonBorderColor: #3d3d3d;
-	--frontTileFilter: brightness(0)contrast(0.1)saturate(0);
-	--frontTileFilterHover: brightness(10)contrast(0.1)saturate(50);
+	--frontTileFilter: invert(1)hue-rotate(180deg)saturate(0)contrast(0.1)brightness(10);
+	--frontTileFilterHover: invert(1)hue-rotate(180deg)saturate(10);
 }
 
 body {
@@ -95,7 +101,11 @@ p{
 h1 {
   font-family: "Franklin Gothic Medium";
   font-size: 40px;
-  color: red;
+  color: var(--h1Color);
+}
+
+.redHeading{
+  color: var(--redHeading);
 }
 
 h2 {
@@ -128,7 +138,7 @@ em{
 figcaption{
   font-family: "Franklin Gothic Medium";
   font-style: italic;
-  color: #333333;
+  color: var(--figcaptionColor);
 }
 
 a:link {
@@ -144,7 +154,8 @@ a:visited {
 }
 
 a:hover {
-  color:red;
+  --aColor: red;
+  --pColor: red;
   font-family: "Franklin Gothic Medium";
   font-size: 20px;
 }
@@ -656,7 +667,7 @@ a:active {
 }
 
 .searchButton:hover{
-	color: red !important;
+	--pColor: red;
 	cursor: pointer;
 }
 
@@ -681,8 +692,8 @@ a:active {
 
 .ad {
   display: block;
-  background-color: white;
-  box-shadow: 1px 4px 12px #5858586b;
+  background-color: var(--postColor);
+  box-shadow: var(--postShadow);
   width: 875px;
   margin-top: 10px;
   margin-bottom: 10px;

@@ -100,8 +100,12 @@ function getAd(){
 if (readCookie('betaMode') === 'true') {
 	//background change
 	let bgElement = document.getElementById("globalBackground")
-	if (bgElement) {
-        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
+	if (readCookie('darkTheme') === 'true') {
+		if (bgElement) {
+        document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg5.webm' type='video/webm'></video>";
+		};
+	} else if (bgElement) {
+		document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 	};
 	//enable ads    i dont think we need this anymore?
 	/*if (document.getElementsByClassName('post')[0] != undefined){

@@ -46,7 +46,7 @@ function generateHeading(content) {
 	let day = new Date();
 	let year = day.getFullYear().toString().slice(2);
 	let fullDate = day.getMonth() + 1 + '/' + day.getDate() + '/' + year
-	return '<a href="https://flare145.com/blogpost?=' + fixTitle() + '"rel="noopener"style="text-decoration:none;"><h2>' + content + '</h2></a>' + '\n' + '<p class="date">' + fullDate + '</p>' + '\n';
+	return '<a href="https://flare145.com/blogpost?=' + fixTitle() + '"rel="noopener"style="text-decoration:none;"><h2 class="redHeading">' + content + '</h2></a>' + '\n' + '<p class="date">' + fullDate + '</p>' + '\n';
 }
 function generateSmallHeading(content) {
 	return '<h3>' + content + '</h3>' + '\n';
