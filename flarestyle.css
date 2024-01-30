@@ -730,6 +730,7 @@ a:active {
 	border-color: var(--bttButtonBorderColor);
 	border-width: 2px;
 	border-radius: 3px;
+	user-select: none;
 }
 
 .searchButton:hover{
@@ -817,6 +818,7 @@ a:active {
   font-family: "Franklin Gothic Medium";
   text-align: center;
   padding-top: 9px;
+  user-select: none;
 }
 
 #loadMore:hover {
