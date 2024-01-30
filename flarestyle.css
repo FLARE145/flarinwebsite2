@@ -15,6 +15,7 @@
 	--frontTileFilter: saturate(0)brightness(0);
 	--frontTileFilterHover: saturate(1)brightness(1);
 	--settingsXButtonFilter: saturate(0)brightness(0);
+	--toggleButtonFilter: saturate(0)brightness(0)
 }
 .lightTheme{
 	--bgColor:#FCFCFC;
@@ -33,6 +34,7 @@
 	--frontTileFilter: saturate(0)brightness(0);
 	--frontTileFilterHover: saturate(1)brightness(1);
 	--settingsXButtonFilter: saturate(0)brightness(0);
+	--toggleButtonFilter: saturate(0)brightness(0)
 }
 .darkTheme{
 	--bgColor:#181818;
@@ -51,6 +53,7 @@
 	--frontTileFilter: invert(1)hue-rotate(180deg)saturate(0)contrast(0.1)brightness(10);
 	--frontTileFilterHover: invert(1)hue-rotate(180deg)saturate(10);
 	--settingsXButtonFilter: saturate(0)brightness(10);
+	--toggleButtonFilter:invert(1)saturate(0);
 }
 
 body {
@@ -324,7 +327,7 @@ a:active {
 
 .togglebutton {
   background: url("/res/uparrowred.svg") no-repeat;
-  filter: saturate(0)brightness(0);
+  filter: var(--toggleButtonFilter);
   background-size: 75%;
   background-position: center;
   background-color: ;
@@ -1028,9 +1031,9 @@ a:active {
   background: url("/res/uparrowred.svg") no-repeat;
   background-size: 75%;
   background-position: center;
-  background-color: white;
+  background-color: var(--postColor);
   border-radius: 25%;
-  border-color: #e6e6e6;
+  border-color: var(--bttButtonBorderColor);
   border-style: solid;
   border-width: 2px;
   display: block;
@@ -1040,6 +1043,7 @@ a:active {
   height: 35px;
   right:15px;
   bottom: 15px;
+  filter: saturate(1);
 }
 
 #loadMore {
@@ -1049,9 +1053,9 @@ a:active {
   margin-bottom: 0px;
   width: 125px;
   height: 35px;
-  background-color: white;
+  background-color: var(--postColor);
   border-radius: .5em;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--bttButtonShadow);
   font-size: 20px;
   font-family: "Franklin Gothic Medium";
   text-align: center;
@@ -1080,7 +1084,7 @@ a:active {
 
 .imageHolder {
   background-color: white;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--pShadow);
   height: auto;
   width: 80%;
   border-radius: .8em;
