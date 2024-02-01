@@ -27,11 +27,11 @@ function clearCookies() {
 
 //settings shortcut
 
-document.addEventListener("keypress", function(event) {
+/*document.addEventListener("keypress", function(event) {
   if (event.key == 's') {
     window.location.href = "https://flare145.com/settings";
   }
-});
+});*/
 
 if (readCookie('visited') === 'true') {
 	console.log('you are a returning user');
