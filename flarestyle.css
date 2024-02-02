@@ -15,7 +15,8 @@
 	--frontTileFilter: saturate(0)brightness(0);
 	--frontTileFilterHover: saturate(1)brightness(1);
 	--settingsXButtonFilter: saturate(0)brightness(0);
-	--toggleButtonFilter: saturate(0)brightness(0)
+	--toggleButtonFilter: saturate(0)brightness(0);
+	--h3Color: black;
 }
 .lightTheme{
 	--bgColor:#FCFCFC;
@@ -34,7 +35,8 @@
 	--frontTileFilter: saturate(0)brightness(0);
 	--frontTileFilterHover: saturate(1)brightness(1);
 	--settingsXButtonFilter: saturate(0)brightness(0);
-	--toggleButtonFilter: saturate(0)brightness(0)
+	--toggleButtonFilter: saturate(0)brightness(0);
+	--h3Color: black;
 }
 .darkTheme{
 	--bgColor:#181818;
@@ -54,6 +56,7 @@
 	--frontTileFilterHover: invert(1)hue-rotate(180deg)saturate(10);
 	--settingsXButtonFilter: saturate(0)brightness(10);
 	--toggleButtonFilter:invert(1)saturate(0);
+	--h3Color: #d9d9d9;
 }
 
 body {
@@ -139,7 +142,7 @@ h2 {
 h3{
   font-family: "Franklin Gothic Medium";
   font-size: 22px;
-  color: black;
+  color: var(--h3Color);
 }
 
 .blogTitle {
