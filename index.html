@@ -208,7 +208,7 @@
 					let bgElement = document.getElementById("globalBackground");
 					if (readCookie('darkTheme') === 'true') {
 						if (bgElement) {
-						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg'><source src='/res/flarebg5.webm' type='video/webm'></video>";
+						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg2.png' id='flarebg' style='filter:brightness(0.21)contrast(1.4)'><source src='/res/flarebg4.webm' type='video/webm'></video>";
 						};
 					} else if (bgElement) {
 						document.getElementById("globalBackground").innerHTML ="<video autoplay loop muted poster='/res/bg1.png' id='flarebg'><source src='/res/flarebg4.webm' type='video/webm'></video>";
