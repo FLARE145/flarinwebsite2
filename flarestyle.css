@@ -451,7 +451,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .newgrounds:hover {
@@ -465,7 +465,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .youtube:hover {
@@ -479,7 +479,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .twitter:hover {
@@ -493,7 +493,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .twitch:hover {
@@ -507,11 +507,39 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .bluesky:hover {
   background: url("/res/bluesky.png") no-repeat;
+  background-size: contain;
+}
+
+.toyhouse {
+  display: inline-block;
+  background: url("/res/toyhouseblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 1em;
+}
+
+.toyhouse:hover {
+  background: url("/res/toyhouse.png") no-repeat;
+  background-size: contain;
+}
+
+.kofi {
+  display: inline-block;
+  background: url("/res/kofiblack.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 1em;
+}
+
+.kofi:hover {
+  background: url("/res/kofi.png") no-repeat;
   background-size: contain;
 }
 
@@ -972,7 +1000,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .youtube {
@@ -981,7 +1009,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .twitter {
@@ -990,7 +1018,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .twitch {
@@ -999,7 +1027,7 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
 }
 
 .bluesky {
@@ -1008,7 +1036,25 @@ a:active {
   background-size: contain;
   width: 55vmin;
   height: 15vmin; 
-  margin: 2em;
+  margin: 1em;
+}
+
+.toyhouse {
+  display: inline-block;
+  background: url("/res/toyhouse.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 1em;
+}
+
+.kofi {
+  display: inline-block;
+  background: url("/res/kofi.png") no-repeat;
+  background-size: contain;
+  width: 55vmin;
+  height: 15vmin; 
+  margin: 1em;
 }
 
 .post {
