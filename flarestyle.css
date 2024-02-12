@@ -209,6 +209,7 @@ a:active {
   height: 10vmin; 
   filter: var(--logoFilter);
   /*padding: 8px;*/
+  user-select: none;
 }
 
 .topbar {
