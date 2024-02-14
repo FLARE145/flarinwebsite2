@@ -673,7 +673,7 @@ a:active {
   background-image: url(/res/loading.gif);
   background-size: cover;
   background-position: center;
-  box-shadow: 1px 4px 12px #5858586b;
+  box-shadow: var(--pShadow);
   width: fit-content;
   max-width: 800px;
   margin-left: auto;
