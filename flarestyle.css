@@ -1149,6 +1149,11 @@ a:active {
   height: auto;
   width: 100%;
 }
+.imageInHolderSmall {
+  flex-shrink: 0;
+  height: auto;
+  width: 100%;
+}
 
 .popup {
   display: block;
