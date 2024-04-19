@@ -795,7 +795,7 @@ a:active {
 .ad {
   display: block;
   background-color: var(--postColor);
-  box-shadow: var(--postShadow);
+  box-shadow: var(--pShadow);
   width: 875px;
   margin-top: 10px;
   margin-bottom: 10px;
