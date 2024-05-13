@@ -633,7 +633,8 @@ a:active {
 .imageHolder {
   background-color: white;
   background-image: url(/res/loading.gif);
-  background-size: cover;
+  background-size: 5em;
+  background-repeat: no-repeat;
   background-position: center;
   box-shadow: var(--pShadow);
   height: fit-content;
@@ -647,7 +648,8 @@ a:active {
 .imageHolderSmall {
   background-color: white;
   background-image: url(/res/loading.gif);
-  background-size: cover;
+  background-size: 5em;
+  background-repeat: no-repeat;
   background-position: center;
   box-shadow: var(--pShadow);
   height: fit-content;
@@ -671,7 +673,8 @@ a:active {
 .bigImageHolder {
   background-color: white;
   background-image: url(/res/loading.gif);
-  background-size: cover;
+  background-size: 5em;
+  background-repeat: no-repeat;
   background-position: center;
   box-shadow: var(--pShadow);
   width: fit-content;
@@ -704,7 +707,8 @@ a:active {
   height: 96vh;
   background-color: white;
   background-image: url(/res/loading.gif);
-  background-size: cover;
+  background-size: 5em;
+  background-repeat: no-repeat;
   background-position: center;
   box-shadow: 1px 4px 12px #0000008c;
   border-radius: 0em;
