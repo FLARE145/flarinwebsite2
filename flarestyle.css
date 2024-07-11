@@ -296,6 +296,21 @@ a:active {
   filter: var(--arrowFilter);
 }
 
+.portfoliotitle {
+  display: inline-block;
+  position: absolute;
+  background: url("/res/portfoliotitle.svg") no-repeat;
+  background-size: contain;
+  margin-left: 0em;
+  margin-right: auto;
+  margin-bottom:2em;
+  top:8vmin;
+  left:46vmin;
+  height:5vmin;
+  width:32vmin;
+  filter: var(--arrowFilter);
+}
+
 .newsbar {
   display: block;
   background: black;
@@ -947,6 +962,103 @@ a:active {
   margin-bottom: 40px;
   background:white;
 }
+
+/*Portfolio*/
+.sampleImage{
+	width: 100%;
+	max-width: 32%;
+    box-shadow: var(--bttButtonShadow);
+}
+
+.sampleImage2{
+	width: 98%;
+	max-width: 100%;
+	box-shadow: var(--bttButtonShadow);
+}
+
+.sampleImage3{
+	width: 98%;
+	max-width: 48.5%;
+	box-shadow: var(--bttButtonShadow);
+}
+
+.sampleImage4{
+	width: 100%;
+	max-width: 100%;
+	box-shadow: var(--bttButtonShadow);
+}
+
+.sampleImage5{
+	width: 100%;
+	max-width: 32.2%;
+	box-shadow: var(--bttButtonShadow);
+}
+
+.portfolioImageRow{
+	display: flex;
+	justify-content: center;
+	margin: 0px -8px;
+	padding: 1% 0 0;
+	gap: 1%;
+}
+
+.decorationLine{
+	clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+	background-color:var(--h1Color);
+	width:8em;
+	height:1em;
+	display:inline-block;
+}
+
+.decorationLine2{
+	clip-path: polygon(27% 0%, 100% 0%, 73% 100%, 0% 100%);
+	background-color:var(--h1Color);
+	width:2em;
+	height:1em;
+	display:inline-block;
+}
+
+.portfolioTitle{
+	display:flex;
+	align-items:center;
+	padding:0px 4em;
+	margin: 3% 0% 6px -8px;
+	background-color: var(--postColor);
+	/*clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);*/
+	width: max-content;
+	max-width: 100vw;
+}
+
+.portfolioSection{
+	background-color:var(--postColor);
+	margin:-8px;
+	padding:0.3% 1% 1.3% 1%;
+}
+
+.portfolioFolder{
+	filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+}
+@media only screen and (max-width: 1000px) {
+	.portfolioTitle{
+	display:flex;
+	align-items:center;
+	padding:0px 8px;
+	margin: 6% 0px 6px -8px;
+	background-color: var(--postColor);
+	clip-path: border-box;
+	width: 100%;
+	}
+	.portfolioTitle h1{
+		width:100%;
+	}
+	.decorationLine{
+	display:none;
+	}
+	.decorationLine2{
+	display:none;
+	}
+}
+
 
 /* Mobile changes */
 
