@@ -430,6 +430,26 @@ a:active {
   cursor: pointer;
 }
 
+.frontPageAd{
+  position: absolute;
+  bottom: 5em;
+  right: -24em;
+  background-image: url("/res/frontPageAd.webp");
+  background-size: contain;
+  background-color: black;
+  height: 6em;
+  width: 24em;
+  box-shadow: var(--pShadow);
+  transition: right 2s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontPageAd{
+    height: 3em;
+    width: 12em;
+  }
+}
+
 .about {
   background-color: #cf0d1b;
   margin-left: -8px;

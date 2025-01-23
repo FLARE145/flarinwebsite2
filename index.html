@@ -64,6 +64,7 @@
 	      <a href="/linkspage"><div class="linkstile"></div></a>
 		  <a href="/blog"><div class="blogtile"></div></a>
 		</div> -->
+		<a href="https://boxkid.net" rel="noopener" target="_blank" style="right:-24em;"><div class="frontPageAd"></div></a>
 		<div class="togglebutton" onclick="toggleElement()">
 		</div>
 		<div class="settingsButton" onclick="openSettings()" style="bottom:10px;">
@@ -216,6 +217,14 @@
 					writeCookie('motionBackground', 'true');
 				};
 			};
+			//frontPageAd
+
+			if (document.getElementsByClassName("frontPageAd")[0] != undefined){
+				ad = document.getElementsByClassName("frontPageAd")[0];
+				setTimeout(() => {
+					ad.style.right = 0;
+				}, "500");
+			}
 		</script>
       </main>
     </body>  
