@@ -1058,7 +1058,31 @@ a:active {
 .portfolioFolder{
 	filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
 }
-@media only screen and (max-width: 1000px) {
+
+.pdfPortfolioViewer{
+  background-color: #181818;
+  margin-left: auto;
+  margin-right: auto;
+  margin: -8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pdfPortfolioImage{
+  height: 55em;
+  object-fit: contain;
+  margin: 1em 0em;
+}
+@media only screen and (max-width: 85em) {
+  .pdfPortfolioImage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: .5em 0em;
+  }
+
 	.portfolioTitle{
 	display:flex;
 	align-items:center;
