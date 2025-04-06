@@ -55,8 +55,15 @@
 		<input type="button" id="generateButton" name="generateButton" onclick="generateOutput()">
 		<label style="color:var(--pColor);" for="generateButton">Generate Output</label><br>
 		<input type="button" id="generateButton" name="copyName" onclick="copyName()">
-		<label style="color:var(--pColor);" for="copyName">CopyName</label><br><br>
-		<label style="color:var(--pColor);">Post html</label><br>
+		<label style="color:var(--pColor);" for="copyName">Copy Name</label><br>
+		<br>
+		<input type="button" id="downloadHTMLButton" name="downloadHTML" onclick="download(generateOutput(), generateFileName())">
+		<label style="bolor:var(--pColor);" for="downloadHTMLButton">Download HTML</label><br>
+		<input type="button" id="downloadPostlistLButton" name="downloadPostlist" onclick="downloadPostlist()">
+		<label style="bolor:var(--pColor);" for="downloadPostlistButton">Download Postlist</label>
+
+		<br><br>
+		<label style="color:var(--pColor);">Post HTML</label><br>
 		<textarea id="output" name="output" rows="20" cols="75"></textarea>
 		<br>
 		<!---<label style="color:var(--pColor);" for="outputUrl">Url</label>

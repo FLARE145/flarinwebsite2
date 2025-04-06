@@ -124,6 +124,34 @@ function generateOutput() {
 	navigator.clipboard.writeText(document.getElementById("output").value);
 	//document.getElementById("outputUrl").value = generateUrl();
 	document.getElementById("outputFileName").value = generateFileName();
+	//added this last line for new stuff to work
+	return output;
+}
+
+function download(text, filename) {
+	var dummy = document.createElement('a');
+	dummy.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	dummy.setAttribute('download', filename);
+	dummy.style.display = 'none';
+	document.body.appendChild(dummy);
+	dummy.click();
+	document.body.removeChild(dummy);
+}
+
+function downloadHTML() {
+	download(generateOutput(), generateFileName())
+}
+
+function downloadPostlist() {
+	let postTitle = [];
+	fetch("postlist.json")
+	.then(response => response.json())
+	.then(json => postlist = json)
+	.then(function(postlist) {
+		postlist.postTitle.unshift(generateFileName());
+		jsonText = JSON.stringify(postlist);
+		download(jsonText, 'postlist.json')
+	});
 }
 
 //Close popup is stolen from art.js and the other thingy is from settings.js
