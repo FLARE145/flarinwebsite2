@@ -52,15 +52,17 @@
 		</div>
 		<div style="display:inline-block; width:auto; float:left; margin-left:10px">
 		<h3 style="color:var(--pColor);">Output</h3>
-		<input type="button" id="generateButton" name="generateButton" onclick="generateOutput()">
+		<input type="button" id="generateButton" name="generateButton" onclick="generateOutput('html')">
 		<label style="color:var(--pColor);" for="generateButton">Generate Output</label><br>
 		<input type="button" id="generateButton" name="copyName" onclick="copyName()">
 		<label style="color:var(--pColor);" for="copyName">Copy Name</label><br>
 		<br>
-		<input type="button" id="downloadHTMLButton" name="downloadHTML" onclick="download(generateOutput(), generateFileName())">
+		<input type="button" id="downloadHTMLButton" name="downloadHTML" onclick="download(generateOutput('html'), generateFileName())">
 		<label style="bolor:var(--pColor);" for="downloadHTMLButton">Download HTML</label><br>
 		<input type="button" id="downloadPostlistLButton" name="downloadPostlist" onclick="downloadPostlist()">
-		<label style="bolor:var(--pColor);" for="downloadPostlistButton">Download Postlist</label>
+		<label style="bolor:var(--pColor);" for="downloadPostlistButton">Download Postlist</label><br>
+		<input type="button" id="downloadFeedButton" name="downloadFeed" onclick="downloadFeed()">
+		<label style="bolor:var(--pColor);" for="downloadFeedButton">Download RSS XML</label>
 
 		<br><br>
 		<label style="color:var(--pColor);">Post HTML</label><br>

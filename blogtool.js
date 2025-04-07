@@ -113,10 +113,14 @@ function generateElement(element) {
 		default: console.log('unknown element type')
 	}
 }
-function generateOutput() {
+function generateOutput(type) {
+	let startingElement = 0;
+	if (type === 'rss'){
+		startingElement = 1;
+	};
 	let eCount = countElements();
 	let output = '';
-	for (let i = 0; i < eCount; i++) {
+	for (let i = startingElement; i < eCount; i++) {
 		let currentE = document.getElementById(i);
 		output += generateElement(currentE);
 	}
@@ -126,6 +130,17 @@ function generateOutput() {
 	document.getElementById("outputFileName").value = generateFileName();
 	//added this last line for new stuff to work
 	return output;
+}
+
+function formatPubDate() {
+	let currentTime = new Date();
+	let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+	let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	let day = days[currentTime.getDay()];
+	let date = currentTime.getDate().toString().padStart(2, '0');
+	let month = months[currentTime.getMonth()];
+	let year = currentTime.getFullYear();
+	return day + ", " + date + " " + month + " " + year;
 }
 
 function download(text, filename) {
@@ -139,7 +154,7 @@ function download(text, filename) {
 }
 
 function downloadHTML() {
-	download(generateOutput(), generateFileName())
+	download(generateOutput('html'), generateFileName())
 }
 
 function downloadPostlist() {
@@ -148,9 +163,61 @@ function downloadPostlist() {
 	.then(response => response.json())
 	.then(json => postlist = json)
 	.then(function(postlist) {
-		postlist.postTitle.unshift(generateFileName());
-		jsonText = JSON.stringify(postlist);
+		postlist.postTitle.unshift(fixTitle());
+		jsonText = JSON.stringify(postlist, null, '\t');
 		download(jsonText, 'postlist.json')
+	});
+}
+
+//function is not my code. used to pretty print the xml
+function formatXml(xml, tab) { // tab = optional indent value, default is tab (\t)
+    var formatted = '', indent= '';
+    tab = tab || '\t';
+    xml.split(/>\s*</).forEach(function(node) {
+        if (node.match( /^\/\w/ )) indent = indent.substring(tab.length); // decrease indent by one 'tab'
+        formatted += indent + '<' + node + '>\r\n';
+        if (node.match( /^<?\w[^>]*[^\/]$/ )) indent += tab;              // increase indent
+    });
+    return formatted.substring(1, formatted.length-3);
+}
+
+function downloadFeed() {
+	fetch("blog-feed.xml")
+    .then((response) => response.text())
+    .then((text) => {
+		//parse
+    	const parser = new DOMParser();
+   		const doc = parser.parseFromString(text, "text/xml");
+		//form
+		let inputTitle = document.getElementById("0").getElementsByClassName("here")[0].value;
+		let item = doc.createElement("item");
+		let title = doc.createElement("title");
+			titleText = doc.createCDATASection(inputTitle);
+			title.appendChild(titleText);
+			item.appendChild(title);
+		let link = doc.createElement("link");
+			link.textContent = 'https://flare145.com/blogpost?=' + fixTitle();
+			item.appendChild(link);
+		let guid = doc.createElement("guid");
+			guid.textContent = 'https://flare145.com/blogpost?=' + fixTitle();
+			item.appendChild(guid);
+		let currentDate = formatPubDate();
+		let pubDate = doc.createElement("pubDate");
+			pubDate.textContent = currentDate;
+			item.appendChild(pubDate);
+		let description = doc.createElement("description");
+			descriptionText = doc.createCDATASection(generateOutput('rss'));
+			description.appendChild(descriptionText);
+			item.appendChild(description);
+		doc.getElementsByTagName("channel")[0].append(item);
+		doc.getElementsByTagName("channel")[0].insertBefore(item, doc.getElementsByTagName("item")[0]);
+		//serialize
+		const serializer = new XMLSerializer();
+		const newFeed = serializer.serializeToString(doc);
+		//pretty
+		let newNewFeed = formatXml(newFeed);
+
+		download(newNewFeed, "blog-feed.xml");
 	});
 }
 
