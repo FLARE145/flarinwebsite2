@@ -143,6 +143,11 @@ function formatPubDate() {
 	return day + ", " + date + " " + month + " " + year;
 }
 
+function getRssPubDate(date = new Date()) {
+	const dateString = date.toUTCString();
+	return dateString;
+}
+
 function download(text, filename) {
 	var dummy = document.createElement('a');
 	dummy.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -201,9 +206,10 @@ function downloadFeed() {
 		let guid = doc.createElement("guid");
 			guid.textContent = 'https://flare145.com/blogpost?=' + fixTitle();
 			item.appendChild(guid);
-		let currentDate = formatPubDate();
+		const now = new Date();
+		const rssPubDate = getRssPubDate(now);
 		let pubDate = doc.createElement("pubDate");
-			pubDate.textContent = currentDate;
+			pubDate.textContent = rssPubDate;
 			item.appendChild(pubDate);
 		let description = doc.createElement("description");
 			descriptionText = doc.createCDATASection(generateOutput('rss'));
