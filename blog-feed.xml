@@ -14,6 +14,26 @@
 		</image>
 		<item>
 			<title>
+				<![CDATA[Microblogging vs. Miniblogging]]>
+			</title>
+			<link>https://flare145.com/blogpost?=microblogging-vs-miniblogging</link>
+			<guid>https://flare145.com/blogpost?=microblogging-vs-miniblogging</guid>
+			<pubDate>Tue, 08 Apr 2025 15:45:19 GMT</pubDate>
+			<description>
+				<![CDATA[<p>All this recent activity on my blog has made me think a bit more about what this even is.</p>
+				<p>Most internet people are familiar with the term microblogging, which refers to short posts on social media platforms. Their purpose is similar to blogs, but much shorter, and much less professional, although, microblogging does have professional uses. </p>
+				<p>My blog on this website is not a microblog, but I don’t see it as a regular blog either. It’s more of an in-between. Something that isn’t capped by a character limit, but is less serious than a real blog. The word I’m drawn to use is miniblog. However, it turns out that people already use that word for something else. I’ve never heard of this, but people use miniblog to mean microblog too. The words are interchangeable. I don’t like this, so from here on out, I declare this blog to be an example of a miniblog, placing it’s scale between microblogging and blogging. </p>
+				<p>Did you know some people use the word nanoblog? It means the exact same thing again. Lame.</p>
+				<h3>RSS stuff</h3>
+				<p>Oh yeah, small update on RSS stuff. I mentioned last time that you can now subscribe to this blog as an RSS feed, but there was still a few issues I hadn’t caught. The time of posting was incorrect, so I spent some time yesterday trying to fix it. That means that posts before this one show up as being posted on the wrong day. I think it should be fine now, but I won’t know until I post this one. If this works, it actually means that you’d get a more accurate idea of when I made a post on the RSS feed than you do with this website.</p>
+				<p>On the topic of RSS, I wanted to make a few recommendations. I’ve been using <a href="https://feedly.com/" rel="nopener" target="_blank">Feedly</a> to read articles on my phone during my work breaks. I can’t say much about desktop experience because I don’t use it, but I have to imagine it’s okay. My main problem with Feedly is that you miss out on features if you don’t pay for it, but I don’t notice it too much. You do need to make an account though.</p>
+				<p>In searching for better ways to test my feed, I found a feed reader today that I think I might like more. You can find it at <a href="https://rss-reader.dutl.uk/" rel="nopener" target="_blank">rss-reader.dutl.uk</a>. This is a very simple RSS reader that works well on both desktop and mobile. It lacks many features from other readers, but if you just want to follow a few feeds, it’s really nice. No account is needed. If you want to save your feeds, all you need to do is bookmark the url, which updates when you add more feeds to it. IT’S ALSO OPEN SOURCE WHOOO! </p>
+				<p>Sorry about that, I don’t usually get that loud. Uh thanks for reading! bruahsani </p>
+]]>
+			</description>
+		</item>
+		<item>
+			<title>
 				<![CDATA[RSS feed is back?]]>
 			</title>
 			<link>https://flare145.com/blogpost?=rss-feed-is-back</link>
