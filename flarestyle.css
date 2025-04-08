@@ -2,6 +2,7 @@
 	--bgColor:#7a7a7a;
 	--logoFilter:contrast(1)brightness(1);
 	--arrowFilter:brightness(1)contrast(1);
+  --rssIconFilter:saturate(0)brightness(1);
 	--postColor: white;
 	--pColor: ;
 	--pShadow: 1px 4px 12px #5858586b;
@@ -22,6 +23,7 @@
 	--bgColor:#FCFCFC;
 	--logoFilter:contrast(1)brightness(1);
 	--arrowFilter:brightness(1)contrast(1);
+  --rssIconFilter:saturate(0)brightness(1);
 	--postColor: white;
 	--pColor: ;
 	--pShadow: 1px 4px 12px #5858586b;
@@ -42,6 +44,7 @@
 	--bgColor:#181818;
 	--logoFilter:invert(1)hue-rotate(180deg)saturate(10);
 	--arrowFilter:brightness(0)contrast(.1);
+  --rssIconFilter:saturate(0)brightness(.55)contrast(2);
 	--postColor:#252525;
 	--pColor:#c3c3c3;
 	--pShadow: 1px 4px 12px #000000a1;
@@ -911,6 +914,33 @@ a:active {
   margin-right: auto;
 }
 
+.rssButtonHolder {
+  width: 907px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rssButton {
+  background: url("/res/rssIcon.svg") no-repeat;
+  filter: var(--rssIconFilter);
+  background-size: 100%;
+  background-position: center;
+  background-color: var(--postColor);
+  border-radius: 25%;
+  border-color: var(--bttButtonBorderColor);
+  box-shadow: var(--bttButtonColor);
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+}
+.rssButton:hover {
+  background: url("/res/rssIcon.svg") no-repeat;
+  filter: saturate(1);
+  background-size: 100%;
+  background-position: center;
+}
 
 /*projects page*/
 
@@ -1224,6 +1254,13 @@ a:active {
   padding: 1px 16px 4px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.rssButtonHolder {
+  display: block;
+  width:auto;
   margin-left: 1em;
   margin-right: 1em;
 }
