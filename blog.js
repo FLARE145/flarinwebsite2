@@ -37,6 +37,7 @@ function loadPosts(start) {
 			document.getElementById("secretFooter").style.display = "block";
 			console.log("wao you made it all the way down. Cograst on finding the easter egg");
 		};
+		showRssButton();
 		adActivate();
 		removeLoadGif();
 	});
@@ -73,4 +74,8 @@ function triggerLoad(){
 
 function removeLoadGif(){
 	document.getElementsByClassName("loadingGif")[0].remove();
-}
+};
+
+function showRssButton() {
+	document.getElementsByClassName("rssButton")[0].style.display = "block";
+};
