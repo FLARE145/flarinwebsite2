@@ -14,6 +14,20 @@
 		</image>
 		<item>
 			<title>
+				<![CDATA[Posting from mobile]]>
+			</title>
+			<link>https://flare145.com/blogpost?=posting-from-mobile</link>
+			<guid>https://flare145.com/blogpost?=posting-from-mobile</guid>
+			<pubDate>Sun, 13 Apr 2025 05:15:05 GMT</pubDate>
+			<description>
+				<![CDATA[<p>Okay so I used to do this occasionally. I can use the blog tool on my phone, but in order to get a post live on the website, I had to make edits to files using the GitHub website. It would take 2 commits and was just kind of annoying. Now, I have the actual website saved to my phone, and hop, I'll be able to follow the same process I do on PC, which is to update the files locally and then sync it with git. I'm doing this with Termux, which is an awesome app I've never heard of. Basically a little terminal you can download and use like Linux. </p>
+				<p>Maybe this is the return of evil posts I make late at night on my phone? Probably not. I'm guessing this will still be a hassle, but we'll see. Main reason I'm trying this is because I'm having a hard time trying to sleep right now even though I feel very tired. If this works, than yay! You're reading words I wrote on my phone and uploaded with relative ease. If it doesn't work, you won't see this. </p>
+				<p>Anyways uhhhh bye</p>
+]]>
+			</description>
+		</item>
+		<item>
+			<title>
 				<![CDATA[Activation energy]]>
 			</title>
 			<link>https://flare145.com/blogpost?=activation-energy</link>
