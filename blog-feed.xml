@@ -14,89 +14,107 @@
 		</image>
 		<item>
 			<title>
-				<![CDATA[Posting from mobile]]>
+				<![CDATA[Marksman drawing]]>
 			</title>
-			<link>https://flare145.com/blogpost?=posting-from-mobile</link>
-			<guid>https://flare145.com/blogpost?=posting-from-mobile</guid>
-			<pubDate>Sun, 13 Apr 2025 05:15:05 GMT</pubDate>
+			<link>https://flare145.com/blogpost?=marksman-drawing</link>
+			<guid>https://flare145.com/blogpost?=marksman-drawing</guid>
+			<pubDate>Tue, 15 Apr 2025 03:06:02 GMT</pubDate>
 			<description>
-				<![CDATA[<p>Okay so I used to do this occasionally. I can use the blog tool on my phone, but in order to get a post live on the website, I had to make edits to files using the GitHub website. It would take 2 commits and was just kind of annoying. Now, I have the actual website saved to my phone, and hop, I'll be able to follow the same process I do on PC, which is to update the files locally and then sync it with git. I'm doing this with Termux, which is an awesome app I've never heard of. Basically a little terminal you can download and use like Linux. </p>
-				<p>Maybe this is the return of evil posts I make late at night on my phone? Probably not. I'm guessing this will still be a hassle, but we'll see. Main reason I'm trying this is because I'm having a hard time trying to sleep right now even though I feel very tired. If this works, than yay! You're reading words I wrote on my phone and uploaded with relative ease. If it doesn't work, you won't see this. </p>
-				<p>Anyways uhhhh bye</p>
+				<![CDATA[<p>I posted a drawing! Today I posted a drawing of Marksman. This is a character by <a href="https://rahimali.net" rel="nopener" target="_blank">Rahim Ali</a>.</p>
+				<figure>
+					<img src="https://storage.googleapis.com/flare145.com/art-images/di008.png" alt="Marksman sliding with a background of a city" style="width:60vmin; display:inline; max-width:790px;">
+						<figcaption>Drawing of Marksman</figcaption>
+					</figure>
+					<p>You can check out the <a href="https://flare145.com/artwork/di008" rel="nopener" target="_blank">artwork page</a> for more info.</p>
+					<p>Now that I have the RSS feed again, I think I'll try to always make a blog post whenever I upload artwork. Just a short little post like this one to notify people that I uploaded something. It's also cool as a sort of timestamp. Anyways, that's all for now, see ya later</p>
 ]]>
-			</description>
-		</item>
-		<item>
-			<title>
-				<![CDATA[Activation energy]]>
-			</title>
-			<link>https://flare145.com/blogpost?=activation-energy</link>
-			<guid>https://flare145.com/blogpost?=activation-energy</guid>
-			<pubDate>Fri, 11 Apr 2025 02:55:44 GMT</pubDate>
-			<description>
-				<![CDATA[<p>Have I talked about this before? This is one of those things I could talk about forever, so maybe I will discuss this in greater detail later.</p>
-				<p>I work on a wide variety of creative projects, and it’s a difficult thing to balance sometimes. There’s so much I want to make, but also so much I’d like to experience.  In science, <em>activation energy</em> is the amount of energy required to start a chemical process. I like to use this term to refer to everyday tasks, including creative projects.</p>
-				<p>A task with low activation energy is something like washing dishes. Yeah it can be time consuming if there’s a lot, but its really easy to get started. Just need a sponge and some soap. A task with high activation energy might be something like fixing a car. There are so many more variables, and there’s a possibility that this task balloons into multiples steps. Most importantly, it requires more thinking.</p>
-				<p>In my mind, my hierarchy of which projects to work on is pretty clear. Commissions, Boxkid, other projects, and leisure. However, I don’t distribute my time according to this order. It’s more like commissions, leisure, other projects, Boxkid. So what’s happening? I’m acting according to activation energy, prioritizing tasks that are easier to start.</p>
-				<p>What sucks about this is that I’ve observed this about my life for a long time, and I came up with Boxkid to combat this. It was a project significantly less interesting than other stuff I wanted to make, but I started working on it to invest into something that was designed to have low activation energy. Of course, my most reasonable fears came true— I ballooned the scope of the idea. It’s okay, because I feel like I came up with cool stuff. The problem is that “cool stuff” requires so much more thinking. And planning. Planning sucks. </p>
-				<p>Something that helps with these tougher tasks is to have more time in the day to actually get started, but that happens less on days I work. This is the main reason I haven’t worked on Boxkid much for over a week. I’m not likely to work on it much for the coming days either, but I am going to try to dedicate some time today to a little bit of planning. I want to make proper model sheets for my main characters, and now that I’ve lifted the traditional paper only restriction on myself for planning material, this should be easier to make than what I originally expected. So I’m pretty excited.</p>
-				<p>I’ve been having fun writing more posts lately, but I might be slowing back down now. I want to write out some more long ones, but they are going to take a while. There are two long posts I’d like to make in particular. In one, I’d like to discuss my current stance on ai generated imagery and the future of the visual arts. I’ve been wanting to make a video on this, but my attempts at that have not gone well, so I think the post will have to do. For the second, I’ve been meaning to collect my ideas on the presence of hypersexuality on the internet. There’s a lot to discuss with this one, so it’s probably going to take me a while. I just remembered that there’s also another one I started to write about vibe-coding. That will probably show up within a week. </p>
-				<p>That’s all for now, see ya later but less frequently!</p>
+				</description>
+			</item>
+			<item>
+				<title>
+					<![CDATA[Posting from mobile]]>
+				</title>
+				<link>https://flare145.com/blogpost?=posting-from-mobile</link>
+				<guid>https://flare145.com/blogpost?=posting-from-mobile</guid>
+				<pubDate>Sun, 13 Apr 2025 05:15:05 GMT</pubDate>
+				<description>
+					<![CDATA[<p>Okay so I used to do this occasionally. I can use the blog tool on my phone, but in order to get a post live on the website, I had to make edits to files using the GitHub website. It would take 2 commits and was just kind of annoying. Now, I have the actual website saved to my phone, and hop, I'll be able to follow the same process I do on PC, which is to update the files locally and then sync it with git. I'm doing this with Termux, which is an awesome app I've never heard of. Basically a little terminal you can download and use like Linux. </p>
+					<p>Maybe this is the return of evil posts I make late at night on my phone? Probably not. I'm guessing this will still be a hassle, but we'll see. Main reason I'm trying this is because I'm having a hard time trying to sleep right now even though I feel very tired. If this works, than yay! You're reading words I wrote on my phone and uploaded with relative ease. If it doesn't work, you won't see this. </p>
+					<p>Anyways uhhhh bye</p>
 ]]>
-			</description>
-		</item>
-		<item>
-			<title>
-				<![CDATA[Microblogging vs. Miniblogging]]>
-			</title>
-			<link>https://flare145.com/blogpost?=microblogging-vs-miniblogging</link>
-			<guid>https://flare145.com/blogpost?=microblogging-vs-miniblogging</guid>
-			<pubDate>Tue, 08 Apr 2025 15:45:19 GMT</pubDate>
-			<description>
-				<![CDATA[<p>All this recent activity on my blog has made me think a bit more about what this even is.</p>
-				<p>Most internet people are familiar with the term microblogging, which refers to short posts on social media platforms. Their purpose is similar to blogs, but much shorter, and much less professional, although, microblogging does have professional uses. </p>
-				<p>My blog on this website is not a microblog, but I don’t see it as a regular blog either. It’s more of an in-between. Something that isn’t capped by a character limit, but is less serious than a real blog. The word I’m drawn to use is miniblog. However, it turns out that people already use that word for something else. I’ve never heard of this, but people use miniblog to mean microblog too. The words are interchangeable. I don’t like this, so from here on out, I declare this blog to be an example of a miniblog, placing it’s scale between microblogging and blogging. </p>
-				<p>Did you know some people use the word nanoblog? It means the exact same thing again. Lame.</p>
-				<h3>RSS stuff</h3>
-				<p>Oh yeah, small update on RSS stuff. I mentioned last time that you can now subscribe to this blog as an RSS feed, but there was still a few issues I hadn’t caught. The time of posting was incorrect, so I spent some time yesterday trying to fix it. That means that posts before this one show up as being posted on the wrong day. I think it should be fine now, but I won’t know until I post this one. If this works, it actually means that you’d get a more accurate idea of when I made a post on the RSS feed than you do with this website.</p>
-				<p>On the topic of RSS, I wanted to make a few recommendations. I’ve been using <a href="https://feedly.com/" rel="nopener" target="_blank">Feedly</a> to read articles on my phone during my work breaks. I can’t say much about desktop experience because I don’t use it, but I have to imagine it’s okay. My main problem with Feedly is that you miss out on features if you don’t pay for it, but I don’t notice it too much. You do need to make an account though.</p>
-				<p>In searching for better ways to test my feed, I found a feed reader today that I think I might like more. You can find it at <a href="https://rss-reader.dutl.uk/" rel="nopener" target="_blank">rss-reader.dutl.uk</a>. This is a very simple RSS reader that works well on both desktop and mobile. It lacks many features from other readers, but if you just want to follow a few feeds, it’s really nice. No account is needed. If you want to save your feeds, all you need to do is bookmark the url, which updates when you add more feeds to it. IT’S ALSO OPEN SOURCE WHOOO! </p>
-				<p>Sorry about that, I don’t usually get that loud. Uh thanks for reading! bruahsani </p>
+				</description>
+			</item>
+			<item>
+				<title>
+					<![CDATA[Activation energy]]>
+				</title>
+				<link>https://flare145.com/blogpost?=activation-energy</link>
+				<guid>https://flare145.com/blogpost?=activation-energy</guid>
+				<pubDate>Fri, 11 Apr 2025 02:55:44 GMT</pubDate>
+				<description>
+					<![CDATA[<p>Have I talked about this before? This is one of those things I could talk about forever, so maybe I will discuss this in greater detail later.</p>
+					<p>I work on a wide variety of creative projects, and it’s a difficult thing to balance sometimes. There’s so much I want to make, but also so much I’d like to experience.  In science, <em>activation energy</em> is the amount of energy required to start a chemical process. I like to use this term to refer to everyday tasks, including creative projects.</p>
+					<p>A task with low activation energy is something like washing dishes. Yeah it can be time consuming if there’s a lot, but its really easy to get started. Just need a sponge and some soap. A task with high activation energy might be something like fixing a car. There are so many more variables, and there’s a possibility that this task balloons into multiples steps. Most importantly, it requires more thinking.</p>
+					<p>In my mind, my hierarchy of which projects to work on is pretty clear. Commissions, Boxkid, other projects, and leisure. However, I don’t distribute my time according to this order. It’s more like commissions, leisure, other projects, Boxkid. So what’s happening? I’m acting according to activation energy, prioritizing tasks that are easier to start.</p>
+					<p>What sucks about this is that I’ve observed this about my life for a long time, and I came up with Boxkid to combat this. It was a project significantly less interesting than other stuff I wanted to make, but I started working on it to invest into something that was designed to have low activation energy. Of course, my most reasonable fears came true— I ballooned the scope of the idea. It’s okay, because I feel like I came up with cool stuff. The problem is that “cool stuff” requires so much more thinking. And planning. Planning sucks. </p>
+					<p>Something that helps with these tougher tasks is to have more time in the day to actually get started, but that happens less on days I work. This is the main reason I haven’t worked on Boxkid much for over a week. I’m not likely to work on it much for the coming days either, but I am going to try to dedicate some time today to a little bit of planning. I want to make proper model sheets for my main characters, and now that I’ve lifted the traditional paper only restriction on myself for planning material, this should be easier to make than what I originally expected. So I’m pretty excited.</p>
+					<p>I’ve been having fun writing more posts lately, but I might be slowing back down now. I want to write out some more long ones, but they are going to take a while. There are two long posts I’d like to make in particular. In one, I’d like to discuss my current stance on ai generated imagery and the future of the visual arts. I’ve been wanting to make a video on this, but my attempts at that have not gone well, so I think the post will have to do. For the second, I’ve been meaning to collect my ideas on the presence of hypersexuality on the internet. There’s a lot to discuss with this one, so it’s probably going to take me a while. I just remembered that there’s also another one I started to write about vibe-coding. That will probably show up within a week. </p>
+					<p>That’s all for now, see ya later but less frequently!</p>
 ]]>
-			</description>
-		</item>
-		<item>
-			<title>
-				<![CDATA[RSS feed is back?]]>
-			</title>
-			<link>https://flare145.com/blogpost?=rss-feed-is-back</link>
-			<guid>https://flare145.com/blogpost?=rss-feed-is-back</guid>
-			<pubDate>Mon, 07 Apr 2025 01:00:00 GMT</pubDate>
-			<description>
-				<![CDATA[<p>For a while now, I’ve been wanting to bring back my RSS feed. You might remember that you used to be able to subscribe to my blog this way. I updated it from the post <a href="https://flare145.com/blogpost?=flare145-goes-to-chicago" rel="nopener" target="_blank">FLARE145 goes to Chicago</a> to <a href="http://flare145.com/blogpost?=cool-little-animation-for-coaxion" rel="nopener" target="_blank">Cool little animation for Coaxion</a>, but it was too big of a hassle for something that was unnecessary. Well, in trying to once again improve how I post the blog, I managed to make it much easier for me to maintain an RSS feed. So, if you use a feed reader, be sure to subscribe to my <a href="http://flare145.com/blog-feed.xml" rel="nopener" target="_blank">RSS feed</a>!</p>
-				<p>I will probably actually support it for a long time now. With the improvements to my system, it’s less work to make a post, even with the added step of the RSS feed. I’ll put a proper link to it somewhere on this page too, because I don’t think I ever had one.</p>
-				<p>Another reason I wanted to do this is because of my dream of making my own feed reader. I likely won’t get around to doing this ever, but I want to make a feed reader that looks like a little plaza of characters, each one representing a feed. They would be customization so you can make them look like your friends sona or something, and have them walk around with that friend’s feed. I just think it would be cool, but it’s probably impossible for me to ever make.</p>
-				<p>I’ve got some stuff to do so I’ll sign off for now. Did you notice I’ve been making more posts? I’ve been in a writing mood lately. Not sure how long this will last for, but I do at least have one more post I’ve been typing out for a bit. Not sure what day I’ll post it, but probably soon. Until then, see ya</p>
+				</description>
+			</item>
+			<item>
+				<title>
+					<![CDATA[Microblogging vs. Miniblogging]]>
+				</title>
+				<link>https://flare145.com/blogpost?=microblogging-vs-miniblogging</link>
+				<guid>https://flare145.com/blogpost?=microblogging-vs-miniblogging</guid>
+				<pubDate>Tue, 08 Apr 2025 15:45:19 GMT</pubDate>
+				<description>
+					<![CDATA[<p>All this recent activity on my blog has made me think a bit more about what this even is.</p>
+					<p>Most internet people are familiar with the term microblogging, which refers to short posts on social media platforms. Their purpose is similar to blogs, but much shorter, and much less professional, although, microblogging does have professional uses. </p>
+					<p>My blog on this website is not a microblog, but I don’t see it as a regular blog either. It’s more of an in-between. Something that isn’t capped by a character limit, but is less serious than a real blog. The word I’m drawn to use is miniblog. However, it turns out that people already use that word for something else. I’ve never heard of this, but people use miniblog to mean microblog too. The words are interchangeable. I don’t like this, so from here on out, I declare this blog to be an example of a miniblog, placing it’s scale between microblogging and blogging. </p>
+					<p>Did you know some people use the word nanoblog? It means the exact same thing again. Lame.</p>
+					<h3>RSS stuff</h3>
+					<p>Oh yeah, small update on RSS stuff. I mentioned last time that you can now subscribe to this blog as an RSS feed, but there was still a few issues I hadn’t caught. The time of posting was incorrect, so I spent some time yesterday trying to fix it. That means that posts before this one show up as being posted on the wrong day. I think it should be fine now, but I won’t know until I post this one. If this works, it actually means that you’d get a more accurate idea of when I made a post on the RSS feed than you do with this website.</p>
+					<p>On the topic of RSS, I wanted to make a few recommendations. I’ve been using <a href="https://feedly.com/" rel="nopener" target="_blank">Feedly</a> to read articles on my phone during my work breaks. I can’t say much about desktop experience because I don’t use it, but I have to imagine it’s okay. My main problem with Feedly is that you miss out on features if you don’t pay for it, but I don’t notice it too much. You do need to make an account though.</p>
+					<p>In searching for better ways to test my feed, I found a feed reader today that I think I might like more. You can find it at <a href="https://rss-reader.dutl.uk/" rel="nopener" target="_blank">rss-reader.dutl.uk</a>. This is a very simple RSS reader that works well on both desktop and mobile. It lacks many features from other readers, but if you just want to follow a few feeds, it’s really nice. No account is needed. If you want to save your feeds, all you need to do is bookmark the url, which updates when you add more feeds to it. IT’S ALSO OPEN SOURCE WHOOO! </p>
+					<p>Sorry about that, I don’t usually get that loud. Uh thanks for reading! bruahsani </p>
 ]]>
-			</description>
-		</item>
-		<item>
-			<title>
-				<![CDATA[Nintendo Switch 2]]>
-			</title>
-			<link>https://flare145.com/blogpost?=nintendo-switch-2</link>
-			<guid>https://flare145.com/blogpost?=nintendo-switch-2</guid>
-			<pubDate>Sat, 05 Apr 2025 01:00:00 GMT</pubDate>
-			<description>
-				<![CDATA[<p>Nintendo recently presented their new console, and I’m really excited for it.</p>
-				<p>I understand that those prices are looking very high, and in particular, I see no reason for any of the accessories to be priced that high. But thankfully, I’m in a situation where a lot of the money I make is just getting saved, and I really don’t mind spending on a console and game. It would only amount to like ¾ a paycheck which I can totally do right now. The sadder thing is that if I get the new job I’m trying to get, I probably wouldn’t even have time to play it.</p>
-				<p>The new Mario Kart looks so good. I was expecting a new game to be vastly different since Mario Kart 8 is the peak of the current formula, and they definitely delivered. Mario Kart is one of those games I love to play forever, and I recently got into Forza Horizon 5 in a similar way. The new game feels like a combination of both in some ways, so it’s literally peak. </p>
-				<p>Donkey Kong Bonanza is also another reminder of why I’m always drawn to Nintendo games. It really is like “indie games with a budget.” What I mean is that they make really polished games that often incorporate new and unique gameplay ideas. There is not a game that you can currently play that is like Donkey Kong Bonanza. You can play other 3d platformers, but none feature the same mechanics. I’ve been thinking about destructible environments in games recently, mostly because of how they were implemented in Marvel Rivals. I think it’s one of the cooler aspects of Marvel Rivals, and I was thinking about how this feels like something that wasn’t really possible to make until now. With Nintendo, they try to look for this kind of thing. What is possible now with new hardware that wasn’t possible before. With the Switch 2 hardware, they’ve been able to make a destructible environment system that blows Marvel Rivals out of the water. Obviously, there are more constraints with Rivals because it’s designed in a way that facilitates a playable competitive map (very impressive), but I’m still really impressed with what I’ve seen in Donkey Kong. </p>
-				<p>Everything is possible first on pc, and really, indie games prove that pretty much anything is possible on low spec hardware as well. But it’s the combination of quality visuals and design with unique ideas that makes me so excited about Nintendo games. I don’t like to call myself a Nintendo fan, but I am. If they stopped making good games, then I’d stop being a fan. But if you erased my memory and put games from across the industry in front of me, I’d be most drawn to Minecraft. But then after that it would probably be a Nintendo game. So yeah.</p>
-				<p>Things have been getting better for 3d platformer fans though. A lot of pc games like Super Lucky’s Tale, or upcoming ones like Rolling Rascal. Even Sony’s Astrobot almost made me want to get a Playstation, but that’s the only game I’d really be interested in, so maybe in like 10 years. </p>
-				<p>The closer we get to the end of support for Windows 10, the more I feel like I want to switch to Linux as my pc operating system. I now have a vision of a future where my pc is linux, and I do most of my gaming on a separate dedicated device. Currently, something like a Steam Deck would be best for this, but seeing the performance of the Switch 2, I can see a near future where I do this with the Switch. Just an interesting idea.</p>
-				<p>That’s all for now. Just wanted to ramble because I’m really excited. The cool thing about being older is that you can actually wait for things you “can’t wait for.” In the mean time, I’ve got peak to play (Crab Champions).</p>]]>
-			</description>
-		</item>
-	</channel>
-</rss>
+				</description>
+			</item>
+			<item>
+				<title>
+					<![CDATA[RSS feed is back?]]>
+				</title>
+				<link>https://flare145.com/blogpost?=rss-feed-is-back</link>
+				<guid>https://flare145.com/blogpost?=rss-feed-is-back</guid>
+				<pubDate>Mon, 07 Apr 2025 01:00:00 GMT</pubDate>
+				<description>
+					<![CDATA[<p>For a while now, I’ve been wanting to bring back my RSS feed. You might remember that you used to be able to subscribe to my blog this way. I updated it from the post <a href="https://flare145.com/blogpost?=flare145-goes-to-chicago" rel="nopener" target="_blank">FLARE145 goes to Chicago</a> to <a href="http://flare145.com/blogpost?=cool-little-animation-for-coaxion" rel="nopener" target="_blank">Cool little animation for Coaxion</a>, but it was too big of a hassle for something that was unnecessary. Well, in trying to once again improve how I post the blog, I managed to make it much easier for me to maintain an RSS feed. So, if you use a feed reader, be sure to subscribe to my <a href="http://flare145.com/blog-feed.xml" rel="nopener" target="_blank">RSS feed</a>!</p>
+					<p>I will probably actually support it for a long time now. With the improvements to my system, it’s less work to make a post, even with the added step of the RSS feed. I’ll put a proper link to it somewhere on this page too, because I don’t think I ever had one.</p>
+					<p>Another reason I wanted to do this is because of my dream of making my own feed reader. I likely won’t get around to doing this ever, but I want to make a feed reader that looks like a little plaza of characters, each one representing a feed. They would be customization so you can make them look like your friends sona or something, and have them walk around with that friend’s feed. I just think it would be cool, but it’s probably impossible for me to ever make.</p>
+					<p>I’ve got some stuff to do so I’ll sign off for now. Did you notice I’ve been making more posts? I’ve been in a writing mood lately. Not sure how long this will last for, but I do at least have one more post I’ve been typing out for a bit. Not sure what day I’ll post it, but probably soon. Until then, see ya</p>
+]]>
+				</description>
+			</item>
+			<item>
+				<title>
+					<![CDATA[Nintendo Switch 2]]>
+				</title>
+				<link>https://flare145.com/blogpost?=nintendo-switch-2</link>
+				<guid>https://flare145.com/blogpost?=nintendo-switch-2</guid>
+				<pubDate>Sat, 05 Apr 2025 01:00:00 GMT</pubDate>
+				<description>
+					<![CDATA[<p>Nintendo recently presented their new console, and I’m really excited for it.</p>
+					<p>I understand that those prices are looking very high, and in particular, I see no reason for any of the accessories to be priced that high. But thankfully, I’m in a situation where a lot of the money I make is just getting saved, and I really don’t mind spending on a console and game. It would only amount to like ¾ a paycheck which I can totally do right now. The sadder thing is that if I get the new job I’m trying to get, I probably wouldn’t even have time to play it.</p>
+					<p>The new Mario Kart looks so good. I was expecting a new game to be vastly different since Mario Kart 8 is the peak of the current formula, and they definitely delivered. Mario Kart is one of those games I love to play forever, and I recently got into Forza Horizon 5 in a similar way. The new game feels like a combination of both in some ways, so it’s literally peak. </p>
+					<p>Donkey Kong Bonanza is also another reminder of why I’m always drawn to Nintendo games. It really is like “indie games with a budget.” What I mean is that they make really polished games that often incorporate new and unique gameplay ideas. There is not a game that you can currently play that is like Donkey Kong Bonanza. You can play other 3d platformers, but none feature the same mechanics. I’ve been thinking about destructible environments in games recently, mostly because of how they were implemented in Marvel Rivals. I think it’s one of the cooler aspects of Marvel Rivals, and I was thinking about how this feels like something that wasn’t really possible to make until now. With Nintendo, they try to look for this kind of thing. What is possible now with new hardware that wasn’t possible before. With the Switch 2 hardware, they’ve been able to make a destructible environment system that blows Marvel Rivals out of the water. Obviously, there are more constraints with Rivals because it’s designed in a way that facilitates a playable competitive map (very impressive), but I’m still really impressed with what I’ve seen in Donkey Kong. </p>
+					<p>Everything is possible first on pc, and really, indie games prove that pretty much anything is possible on low spec hardware as well. But it’s the combination of quality visuals and design with unique ideas that makes me so excited about Nintendo games. I don’t like to call myself a Nintendo fan, but I am. If they stopped making good games, then I’d stop being a fan. But if you erased my memory and put games from across the industry in front of me, I’d be most drawn to Minecraft. But then after that it would probably be a Nintendo game. So yeah.</p>
+					<p>Things have been getting better for 3d platformer fans though. A lot of pc games like Super Lucky’s Tale, or upcoming ones like Rolling Rascal. Even Sony’s Astrobot almost made me want to get a Playstation, but that’s the only game I’d really be interested in, so maybe in like 10 years. </p>
+					<p>The closer we get to the end of support for Windows 10, the more I feel like I want to switch to Linux as my pc operating system. I now have a vision of a future where my pc is linux, and I do most of my gaming on a separate dedicated device. Currently, something like a Steam Deck would be best for this, but seeing the performance of the Switch 2, I can see a near future where I do this with the Switch. Just an interesting idea.</p>
+					<p>That’s all for now. Just wanted to ramble because I’m really excited. The cool thing about being older is that you can actually wait for things you “can’t wait for.” In the mean time, I’ve got peak to play (Crab Champions).</p>]]>
+				</description>
+			</item>
+		</channel>
+	</rss>
